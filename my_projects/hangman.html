@@ -1,0 +1,88 @@
+<!DOCTYPE html><!-- HTML5 -->
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/><!-- HTML5 -->
+    <meta name="keywords" content="HTML, CSS, Javascript, jQuery"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Melissa Yip | Web Developer</title>
+    <link rel="stylesheet" href="../stylesheet/normalize.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../stylesheet/projects.css"/>
+    <link rel="stylesheet" href="../stylesheet/responsive.css"/>
+  </head>
+
+   <body>
+    <header>
+      <div id="header-container">
+        <div id="name-title">
+          <div id="name-header">
+            <a href="../home.html">
+              <h1>Melissa Yip</h1>
+              <h5>Web Developer</h5>
+            </a>
+          </div>
+        </div>
+        <div id="main-nav">
+          <ul>
+            <!-- <li><a href="../about.html">About</a></li> -->
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="#" class="emailAddress">Contact</a>
+              <ul>
+                <li><a href="mailto:melissasyip@gmail.com">melissasyip@gmail.com</a></li>
+                <li><a href="https://twitter.com/su6a12" class="twitter-follow-button" data-show-count="false">Follow @su6a12</a></li>
+                <li><a href="http://instagram.com/su6a12?ref=badge" class="ig-b- ig-b-32">Instagram</a>
+                </li>
+              </ul>
+            </li>
+          </ul> 
+        </div><!-- end of navbar -->
+      </div><!-- end of header-container class -->
+    </header>
+
+    <section>
+      <div id="hangman-qs">
+
+        <div id="count-number">
+          <label for="word-count">How many letters can you handle?</label>
+          <input type="text" id="word-count">
+        </div>
+
+        <div id="how-many">
+          <label for="tries">How many tries do you need?(no more than 15)</label>
+          <input type="text" id="tries">
+        </div>
+
+        <button id="new-word">Play Hangman!</button>
+      </div><!-- initial questions when page launches, hidden afterwards -->
+
+      <div id="hangman-game">
+
+        <div id="word-display"></div>
+
+        <input type="text" id="letter-guess">
+        <button id="letter-guess-btn">Guess!</button>
+
+        <div id="wrong-guesses">
+          <label for="incorrect-guesses">Wrong Letters So Far: </label>
+          <div id="incorrect-guesses"></div><!-- keeps track of number of wrong guesses -->
+        </div>
+
+        <div id="guess-count">
+          <label for="guesses-so-far">Count: </label>
+          <div id="guesses-so-far"></div><!-- keeps track of guesses so far -->
+        </div>
+      </div>
+
+      <div id="hangman-game-reset">
+        <button id="hangman-reset-btn">Reset</button>
+      </div>
+
+    </section>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- jQuery -->
+    <script src="../applications/hangman.js"></script>
+  </body>
+</html>

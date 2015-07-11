@@ -1,0 +1,307 @@
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;    /*For < IE 8*/
+}
+/*--------------------------Header------------------*/
+header {
+    margin: 0.25% 5% 0 5%;
+}
+#header-container {
+    /*overflow: hidden;     Need to remove it for drop down to show up*/
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100px;
+    /*border: solid purple;*/
+}
+#name-title {
+    position: relative;
+    width: 24%;
+    /*border: solid purple;*/
+}
+#name-header {
+    position: relative;
+    max-width: 200px;       /*Size of name and subtitle*/
+    float: left;
+    margin: 0 3%;
+    /*border: solid red;*/
+}
+div#name-header a:hover {
+    text-decoration: none;
+}
+h1, h5 {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    color: gray;
+    text-decoration: none;
+}
+h1 {
+    margin: 5px 0;
+}
+h5 {
+    margin: 0 0 20px;
+}
+/*----------------------Nav Bar------------------------*/
+#main-nav {
+    width: 75%;
+    float: right;
+    /*border: black solid;*/
+}
+#main-nav ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    margin: 2% 0 0 12%;      /*Move the nav bar further to the right*/
+    display: block;
+    /*border: blue solid;*/
+}
+#main-nav ul li {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    padding: 1% 2.5%;
+    border-radius: 5px;
+    /*border: solid green;*/
+}
+#main-nav ul li a {
+    color: gray;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: .2em;
+    /*border: yellow solid;*/
+}
+#main-nav li:hover {
+    background-color: DarkCyan;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition:    background-color 0.4s ease;
+    transition:         background-color 0.4s ease;
+}
+#main-nav li:hover > a {
+    color: white;
+}
+#main-nav ul li ul {
+    position: absolute;
+    visibility: hidden;
+    right: 0;
+    top: 30px;
+    width: 160%;
+    border-radius: 5px;
+    list-style: none;
+}
+#main-nav ul li > ul li {
+    display: block;           /*Makes all <li>s the same width*/
+    /*width: 100%; */           /*Makes all <li>s the same width*/
+    padding: 2% 10%;
+    /*border: red solid;*/
+}
+#main-nav ul li:hover > ul {
+    z-index: 100;
+    visibility: visible;
+    margin-top: 20%;
+    background-color: DarkCyan;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition:    background-color 0.4s ease;
+    transition:         background-color 0.4s ease;
+    text-align: center;
+    margin: 0;
+    /*border: black solid;*/
+}
+#main-nav ul li:hover > ul li {
+    border-bottom: solid white 1px;
+}
+#main-nav ul li:hover > ul li:last-child {
+    border-bottom: none;
+}
+#main-nav ul li:hover > ul li a {
+    font-size: 75%;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: white;
+    letter-spacing: 0.2em;
+    font-weight: normal;
+}
+/*Learning about creating a triangle
+/*#div1 {
+    height: 0;
+    width: 50;
+    border-bottom: 50px solid orange;
+    border-left: 50px solid purple;
+    border-right: 50px solid yellow;
+
+}*/
+/*--------------------parallax--------------------*/
+section {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*.parallax {
+    height: 500px;  fallback for older browser versions
+    height: 100vh;  100% of viewport height
+    overflow-x: hidden;
+    overflow-y: auto; 
+    -webkit-perspective:            1px;
+    -moz-perspective:               1px;
+    perspective:                    1px;
+    /*-webkit-perspective-origin-x:   100%;
+    -moz-perspective-origin-x:      100%;
+    perspective-origin-x:           100%;
+}*/
+/*.parallax_group {
+    position: relative;
+    height: 100vh;
+    -webkit-transform-style:    preserve-3d;
+    -moz-transform-style:       preserve-3d;
+    transform-style:            preserve-3d;
+}*/
+/*.parallax_layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin-x: 100%;
+    -moz-transform-origin-x:    100%;
+    transform-origin-x:         100%;
+    padding: 100vh 0;
+}*/
+/*.parallax_layer-base {
+    background-image: url("../images/ggb_bnw.jpg");
+    background-size: cover;
+    -webkit-transform:  translateZ(0);
+    -moz-transform:     translateZ(0);
+    transform:          translateZ(0);
+}
+.parallax_layer-back {
+    background-image: url("../images/ggb.jpg");
+    background-size: cover;
+    -webkit-transform:  translateZ(-1px) scale(2);
+    -moz-transform:     translateZ(-1px) scale(2);
+    transform:          translateZ(-1px) scale(2);
+}*/
+/*.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform:  translate(-50%, -50%);
+    -moz-transform:     translate(-50%, -50%);
+    transform:          translate(-50%, -50%);
+}*/
+#main-image {
+    background: linear-gradient(#2FCCCF, transparent 90%),
+                linear-gradient(0deg, #fff, transparent 50%),
+                url("../images/cherry_blossoms.JPG") no-repeat center;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    padding-top: 56.25%;        /*sets the height proportional to width 16:9*/
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+}
+/*#group2 .parallax_layer-back {
+    background: linear-gradient(#2FCCCF, transparent 90%),
+                linear-gradient(0deg, #fff, transparent 50%),
+                url("../images/beach.jpg") no-repeat center;
+    background-size: cover;
+    /*position: relative;*/
+    /*max-width: 100%;
+    padding-top: 56.25%;        /*sets the height proportional to width 16:9*/
+    /*box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);*/
+}
+/*--------------------Portfolio---------------------*/
+#images-wrapper {
+    overflow: visible;
+}
+#imageGallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#imageGallery li {
+    float: left;
+    width: 31.3333%;
+    height: auto;
+    margin: 1%;
+}
+#imageGallery li a {
+    text-decoration: none;
+}
+#imageGallery img {
+    max-width: 100%;
+}
+/*Overlay feature*/
+#overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+#overlay img {
+    margin-top: 5%;
+}
+#overlay p {
+    color: white;
+    margin-top: 1%;
+}
+/*-------------------Projects Page-------------*/
+#projects-list {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+    /*border: solid blue;*/
+}
+#projects-list ul {
+    list-style-type: circle;
+    /*border: solid black;*/
+}
+#projects-list li {
+    margin: 10px;
+    font-size: 1.5em;
+    display: table;     /*sets width of li elements to anchor text width*/
+    /*border: solid red;*/
+}
+#projects-list li:hover > a {
+    color: DarkCyan;
+    letter-spacing: 0.3em;
+    -webkit-transition: letter-spacing 0.4s ease;
+    -moz-transition:    letter-spacing 0.4s ease;
+    transition:         letter-spacing 0.4s ease;
+}
+#projects-list li a {
+    letter-spacing: 0;
+    -webkit-transition: letter-spacing 0.4s ease;
+    -moz-transition:    letter-spacing 0.4s ease;
+    transition:         letter-spacing 0.4s ease;
+}
+#projects-list a {
+    text-decoration: none;
+    color: Gray;
+}
+/*---------------------Footer-----------------------*/
+#main-footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+#main-footer p {
+    padding: 3% 0;
+}
+
+
+
+
+
