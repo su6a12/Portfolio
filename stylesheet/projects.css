@@ -286,7 +286,7 @@ h3 {
 	border-bottom: solid black 2px;
 }
 #todo-container button {
-	display: inline-block;	
+	display: inline-block;
 }
 #add-section label {
 	text-transform: uppercase;
@@ -335,7 +335,7 @@ ul#incomplete-tasks {
 #completed-tasks label {
 	margin-bottom: 10px;
 	font-size: 18px;
-	text-decoration: line-through; 
+	text-decoration: line-through;
 }
 #completed-tasks .delete {
 	float: right;
@@ -364,7 +364,7 @@ ul li.editmode label {
 	padding: 20px 20px 50px 20px;
 	background: #C7FFEF;
 	border-radius: 10px;
-	
+
 }
 #tweet-form label {
 	font-size: 125%;
@@ -621,4 +621,13 @@ button#new-word {
 /*--------------------------smarter-than-cat------------------------*/
 #smarts-intro {
 	display: none;
+}
+/*--------------------------analog-clock----------------------------*/
+#analog-clock {
+	position: relative;
+	margin-top: 50px;
+}
+#canvas-clock {
+	margin: 0 auto;
+	display: block;
 }

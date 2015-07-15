@@ -38,51 +38,24 @@
                 </li>
               </ul>
             </li>
-          </ul> 
+          </ul>
         </div><!-- end of navbar -->
       </div><!-- end of header-container class -->
     </header>
 
-	 	<div id="todo-container">
-	 		<p id="add-section">
-	 			<label for="new-task">Add Item</label>
-	 			<input type="text" id="new-task" value="workout">
-	 			<button id="add-button">Add</button>
-	 		</p>
-
- 			<h3>To-Do</h3>
- 			<ul id="incomplete-tasks">
- 				<!-- <li>
- 					<input type="checkbox">
- 					<label>Study</label>
- 					<button class="edit">Edit</button>
- 					<button class="delete">Delete</button>
- 				</li> -->
-
- 				<!-- <li class="editmode">
-	 				<input type="checkbox">
-	 				<input type="text" id="edit" value="Take over the world!">
-	 				<button class="edit">Edit</button>
-	 				<button class="delete">Delete</button>
-	 			</li> -->
-	 		</ul>
-
- 			<h3>Completed</h3>
- 			<ul id="completed-tasks">
- 				<!-- <li>
- 					<input type="checkbox">
- 					<label>Shopping</label>
- 					<button class="edit">Edit</button>
- 					<button class="delete">Delete</button>
- 				</li> -->
- 			</ul>
+    <div id="analog-clock">
+	 		<canvas id="canvas-clock" width="410" height="410"></canvas>
 	 	</div>
-	 	<!-- Beginning of scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- jQuery -->
+
+
+    <!-- Beginning of scripts -->
+    <script type="text/javascript" src="../applications/analog-clock.js"></script> <!-- Javascript -->
+    <script type="text/javascript">
+      drawAnalogClock();
+    </script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
-    <script src="../applications/todo-list.js"></script> <!-- Javascript -->
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	 </body>
-	<html>
+  </body>
+</html>
