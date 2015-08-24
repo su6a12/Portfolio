@@ -24,19 +24,19 @@ function resetColor() {
 	$("#newColorBox").css("background-color", "black");
 }
 //set player1 color
-$("#player1-color").click(function() {
+$("#player1-color").on("click", function() {
 	player1RGB = rgbVal;
 	$(this).css("background-color", player1RGB);
 	resetColor();
 });
 //set player2 color
-$("#player2-color").click(function() {
+$("#player2-color").on("click", function() {
 	player2RGB = rgbVal;
 	$(this).css("background-color", player2RGB);
 	resetColor();
 });
 
-$(".square").click(function() {
+$(".square").on("click", function() {
 	count += 1;
 	//player 1
 	if (count % 2 !== 0 || count === 1) {

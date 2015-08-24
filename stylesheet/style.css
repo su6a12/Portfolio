@@ -58,9 +58,9 @@ h5 {
 }
 #main-nav ul {
     list-style: none;
-    text-align: center;
+    text-align: right;
     width: 100%;
-    margin: 2% 0 0 12%;      /*Move the nav bar further to the right*/
+    margin: 2% 0 0 0;      /*Move the nav bar further to the right*/
     display: block;
     /*border: blue solid;*/
 }
@@ -140,64 +140,10 @@ h5 {
     border-right: 50px solid yellow;
 
 }*/
-/*--------------------parallax--------------------*/
 section {
     max-width: 960px;
     margin: 0 auto;
 }
-
-/*.parallax {
-    height: 500px;  fallback for older browser versions
-    height: 100vh;  100% of viewport height
-    overflow-x: hidden;
-    overflow-y: auto; 
-    -webkit-perspective:            1px;
-    -moz-perspective:               1px;
-    perspective:                    1px;
-    /*-webkit-perspective-origin-x:   100%;
-    -moz-perspective-origin-x:      100%;
-    perspective-origin-x:           100%;
-}*/
-/*.parallax_group {
-    position: relative;
-    height: 100vh;
-    -webkit-transform-style:    preserve-3d;
-    -moz-transform-style:       preserve-3d;
-    transform-style:            preserve-3d;
-}*/
-/*.parallax_layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transform-origin-x: 100%;
-    -moz-transform-origin-x:    100%;
-    transform-origin-x:         100%;
-    padding: 100vh 0;
-}*/
-/*.parallax_layer-base {
-    background-image: url("../images/ggb_bnw.jpg");
-    background-size: cover;
-    -webkit-transform:  translateZ(0);
-    -moz-transform:     translateZ(0);
-    transform:          translateZ(0);
-}
-.parallax_layer-back {
-    background-image: url("../images/ggb.jpg");
-    background-size: cover;
-    -webkit-transform:  translateZ(-1px) scale(2);
-    -moz-transform:     translateZ(-1px) scale(2);
-    transform:          translateZ(-1px) scale(2);
-}*/
-/*.title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform:  translate(-50%, -50%);
-    -moz-transform:     translate(-50%, -50%);
-    transform:          translate(-50%, -50%);
-}*/
 #main-image {
     background: linear-gradient(#2FCCCF, transparent 90%),
                 linear-gradient(0deg, #fff, transparent 50%),
@@ -208,16 +154,28 @@ section {
     padding-top: 56.25%;        /*sets the height proportional to width 16:9*/
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
 }
-/*#group2 .parallax_layer-back {
-    background: linear-gradient(#2FCCCF, transparent 90%),
-                linear-gradient(0deg, #fff, transparent 50%),
-                url("../images/beach.jpg") no-repeat center;
-    background-size: cover;
-    /*position: relative;*/
-    /*max-width: 100%;
-    padding-top: 56.25%;        /*sets the height proportional to width 16:9*/
-    /*box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);*/
+#about-image {
+    position: relative;
 }
+#about-image::after {
+    content: "";
+    background-image: url("../images/fire_sky.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+}
+#about {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
 /*--------------------Portfolio---------------------*/
 #images-wrapper {
     overflow: visible;

@@ -1,0 +1,53 @@
+body {
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+}
+h1 {
+	font-size: 50px;
+	letter-spacing: 0.2em;
+}
+#simon-game-container {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	border: 6px black solid;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+}
+.slice {
+	width: 194px;
+	height: 194px;
+	border: 1px solid black;
+	float: left;
+	cursor: pointer;
+}
+#red {
+	background-color: #ec0974;
+	border-top-left-radius: 100%;
+}
+#green {
+	background-color: #40b000;
+	border-bottom-right-radius: 100%;
+}
+#yellow {
+	background-color: #fff220;
+	border-bottom-left-radius: 100%;
+}
+#blue {
+	background-color: #0f00f0;
+	border-top-right-radius: 100%;
+}
+#level-container,
+#lives-container {
+	display: inline-block;
+	margin: 10px;
+	font-size: 20px;
+}
+button {
+	position: relative;
+	display: block;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+

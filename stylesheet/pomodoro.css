@@ -1,0 +1,53 @@
+body {
+	font-family: 'Rock Salt', cursive;
+	text-align: center;
+	position: relative;
+}
+body::after {
+	background: url('http://pngimg.com/upload/tamato_PNG2710.png');
+	content: "";
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	opacity: 0.2;
+	background-size: contain;
+	z-index: -1;
+}
+h1 {
+	font-size: 60px;
+	margin: 0 auto;
+	margin-top: -20px;
+	letter-spacing: 0.2em;
+}
+.section {
+	display: inline-block;
+}
+.mini-section {
+	display: inline-block;
+	margin: 0 10px;
+}
+#adjust-timer {
+	margin: 0 300px;
+	margin-top: -30px;
+}
+#break-section {
+	margin-right: 100px;
+}
+#work-section {
+	margin-left: 100px;
+}
+.button,
+button {
+	cursor: pointer;
+}
+button#start,
+button#clear {
+	margin: 0 30px;
+}
+#timer-countdown {
+	font-size: 100px;
+	margin-top: 20px;
+	letter-spacing: 0.2em;
+}

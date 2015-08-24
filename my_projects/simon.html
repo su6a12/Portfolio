@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Play the Simon Game!</title>
+		<meta charset="utf-8"/><!-- HTML5 -->
+	  <meta name="keywords" content="HTML, CSS, Javascript, jQuery"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	  <title>Melissa Yip | Web Developer</title>
+	  <link rel="stylesheet" href="../stylesheet/normalize.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheet/simon.css">
+		<link rel="stylesheet" href="../stylesheet/responsive.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../applications/simon.js"></script>
+	</head>
+	<body>
+		<h1>Simon Game</h1>
+
+		<div id="simon-game-container">
+			<div id="red" class="slice">
+				<audio src="http://www.chiptape.com/chiptape/sounds/short/wipeHi.wav"></audio>
+			</div>
+			<div id="blue" class="slice">
+				<audio src="http://www.chiptape.com/chiptape/sounds/short/boingShort.wav"></audio>
+			</div>
+			<div id="yellow" class="slice">
+				<audio src="http://www.chiptape.com/chiptape/sounds/short/dinkMenu.wav"></audio>
+			</div>
+			<div id="green" class="slice">
+				<audio src="http://www.chiptape.com/chiptape/sounds/short/horn.wav"></audio>
+			</div>
+		</div>
+
+		<div id="level-container">Level: <span id="level"></span></div>
+
+		<button id="start-reset">Start</button>
+	</body>
+</html>
+
