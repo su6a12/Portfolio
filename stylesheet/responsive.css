@@ -10,6 +10,9 @@
         position: relative;
         margin: 0 5%;
     }
+    div#about-me {
+        font-size: 20px;
+    }
     /*------------------------Header---------------------*/
         header {
         /*border: solid red;*/
@@ -69,6 +72,10 @@
     }
     h1 {
         font-size: 28px;
+    }
+    div#about-me {
+        font-size: 15px;
+        top: 50px;
     }
     /*------------------------Header---------------------*/
     header {

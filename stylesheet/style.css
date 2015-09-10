@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     font-family: 'Raleway', Helvetica, sans-serif;
+    /*z-index: 100;*/
 }
 .clearfix:before,
 .clearfix:after {
@@ -141,41 +142,45 @@ h5 {
 
 }*/
 section {
-    max-width: 960px;
+    max-width: 900px;
     margin: 0 auto;
 }
 #main-image {
-    background: linear-gradient(#2FCCCF, transparent 90%),
-                linear-gradient(0deg, #fff, transparent 50%),
-                url("../images/cherry_blossoms.JPG") no-repeat center;
-    background-size: cover;
     position: relative;
-    max-width: 100%;
-    padding-top: 56.25%;        /*sets the height proportional to width 16:9*/
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
-}
-#about-image {
-    position: relative;
-}
-#about-image::after {
-    content: "";
-    background-image: url("../images/fire_sky.jpg");
-    background-size: cover;
-    opacity: 0.4;
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
-    max-width: 100%;
-}
-#about {
-    margin-top: 20px;
-    font-size: 20px;
-}
+    margin: 0 auto;
+    width: 100%;
+    
+    /*padding-top: 56.25%;*/        /*sets the height proportional to width 16:9*/
+    /*background: linear-gradient(#2FCCCF, transparent 90%),
+                linear-gradient(0deg, #fff, transparent 50%);*/
+                /*url("../images/cherry_blossoms.JPG") no-repeat center center;*/
+    /*background-size: cover;*/
+    z-index: 40;
 
+}
+#main-image img {
+    display: block;
+    opacity: 0.2;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+}
+div#about-me {
+    position: absolute;
+    /*display: none;*/
+    font-size: 35px;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-indent: 80px;
+    color: black;
+    z-index: 50;
+    left: 10px;
+    top: 140px;
+    width: 90%;
+    margin: 0 auto;
+}
+#about-me span {
+    display: none;
+}
 /*--------------------Portfolio---------------------*/
 #images-wrapper {
     overflow: visible;
@@ -251,9 +256,11 @@ section {
     color: Gray;
 }
 /*---------------------Footer-----------------------*/
-#main-footer {
-    max-width: 960px;
+footer {
+    max-width: 900px;
     margin: 0 auto;
+    display: block;
+    z-index: 45;
 }
 #main-footer p {
     padding: 3% 0;
