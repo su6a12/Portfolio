@@ -171,9 +171,9 @@ div#about-me {
     font-size: 35px;
     font-family: 'Raleway', Helvetica, sans-serif;
     text-indent: 80px;
-    color: black;
+    color: #505050;
     z-index: 50;
-    left: 10px;
+    left: 20px;
     top: 140px;
     width: 90%;
     margin: 0 auto;
