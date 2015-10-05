@@ -13,43 +13,101 @@
     <link rel="stylesheet" href="stylesheet/responsive.css"/>
   </head>
   <body>
-    <header>
-      <div id="header-container">
-        <div id="name-title">
-          <div id="name-header">
-            <a href="home.html">
-              <h1>Melissa Yip</h1>
-              <h5>Web Developer</h5>
-            </a>
-          </div>
-        </div>
-        <div id="main-nav">
-          <ul>
-            <li><a href="#" id="about-link">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#" class="emailAddress">Contact</a>
-              <ul>
-                <li><a href="mailto:melissasyip@gmail.com">melissasyip@gmail.com</a></li>
-                <li><a href="https://github.com/su6a12">Github</a>
-                <li><a href="https://www.linkedin.com/in/melissayip1">LinkedIn</a>
-                <li><a href="https://twitter.com/su6a12" class="twitter-follow-button" data-show-count="false">Follow @su6a12</a></li>
-                </li>
-              </ul>
-            </li>
-          </ul> 
-        </div><!-- end of navbar -->
-      </div><!-- end of header-container class -->
+    <header id="ggb-pic">
+      <div class="title">
+        <p id="title1">Hi, I'm Melissa</p>
+        <p id="title2">Welcome To My Site</p>
+        <p id="title3">(Please Scroll Down)</p>
+      </div>
     </header>
 
+    <section id="main-nav">
+      <ul>
+        <li><a href="#about" id="about-link">About</a></li>
+        <li><a href="#projects-list">Projects</a></li>
+        <li><a href="#contact" class="emailAddress">Contact</a>
+          <ul>
+            <li><a href="mailto:melissasyip@gmail.com">melissasyip@gmail.com</a></li>
+            <li><a href="https://github.com/su6a12">Github</a>
+            <li><a href="https://www.linkedin.com/in/melissayip1">LinkedIn</a>
+            <li><a href="https://twitter.com/su6a12" class="twitter-follow-button" data-show-count="false">Follow @su6a12</a></li>
+            </li>
+          </ul>
+        </li>
+      </ul> 
+    </section>
 
-    <section>
-      <div id="main-image">
-        <img src="images/cherry_blossoms.JPG" alt="cherry blossoms">
-          <div id="about-me">
-            <span>I'm a self-taught web developer who loves to code and make pretty things on screen.</span><span>   My skills include HTML5, CSS3, Javascript, jQuery, Bootstrap, Angular.js, Git.</span><span>   I love to learn so my list of projects is constantly growing.  Check out my work and let me know what you think!</span>
-          </div>
+    <section id="about">
+      <img id="about-img" src="images/headshot.jpg">
+      <div id="about-blurb">
+        <p><span>I'm a self-taught web developer who loves to code and make pretty things on screen.</span><span>  A product manager by day, a coding ninja by night.</span><span>  My joy comes from adding new skills to my ever expanding technology toolkit.</span><span>  That toolkit currently includes HTML5, CSS3, Javascript, jQuery, Bootstrap, Angular.js, Git.</span><span>  I love to learn so my list of projects is constantly growing.</span><span>  Please check out my work and let me know what you think!</span></p>
       </div>
     </section>
+
+    <section id="projects-list">
+      <div id="projects">
+        <ul>
+          <div class="project">
+            <a href="my_projects/background-color.html">
+              <li>
+                <img src="images/background_color.png"><div class="project_name">Background Color</div>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/tic-tac-toe.html">
+              <li>
+                <img src="images/tic_tac_toe.png"><div class="project_name">Play Tic-Tac-Toe</div>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/memory.html">
+              <li>
+                <img src="images/memory.png"><div class="project_name">Test Your Memory</div>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/hangman.html">
+              <li>
+                <img src="images/hangman.png"><div class="project_name">Hangman</div>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/analog-clock.html">
+              <li>
+                <img src="images/analog_clock.png"><div class="project_name">What Time Is It?</div>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/pomodoro.html">
+              <li>
+                <img src="images/pomodoro.png"><div class="project_name">Ready, Set, Work!</div>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/calculator.html">
+              <li>
+                <img src="images/calculator.png"><div class="project_name">Calculator</div>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/simon.html">
+              <li>
+                <img src="images/simon.png"><div class="project_name">Simon Game</div>
+              </li>
+            </a>
+          </div>
+        </ul>
+      </div>
+
+    </section>
+
 
     <footer class="clearfix">
       <div id="main-footer">
@@ -62,14 +120,6 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript">
-      $("#about-link").click(function() {
-        $("span").each(function(index) {
-          $(this).delay(index * 1000).fadeIn(1000);
-        });
-      });
-      
-    </script>
+    <script type="text/javascript" src="applications/main.js"></script>
   </body>
 </html>
-
