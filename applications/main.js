@@ -1,9 +1,3 @@
-$("#about-link").click(function() {
-  $("span").each(function(index) {
-    $(this).delay(index * 1000).fadeIn(1000);
-  });
-});
-
 $(window).scroll(function() {
 	var scrollHeight = $(this).scrollTop();
 	// Fades title in and out depending on page position

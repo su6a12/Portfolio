@@ -18,10 +18,10 @@ section {
 #ggb-pic {
     position: relative;
     height: 650px;
-    background: url("../images/ggb1.jpg");
+    background: url("../images/ggb1.jpg") no-repeat top center fixed;
     background-size: auto 650px;
-    background-position: top center;
-    background-attachment: fixed;
+    /*background-position: top center;
+    background-attachment: fixed;*/
 }
 div.title {
     text-transform: uppercase;
@@ -54,7 +54,7 @@ p#title3 {
 }
 /*-------------------------About-------------------------------*/
 #about {
-    height: 500px;
+    height: 380px;
     margin: 0 auto;
 }
 #about-img {
@@ -202,8 +202,6 @@ p span {
 }*/
 /*-------------------------Projects List-----------------------*/
 #projects-list {
-    /*background: #B0C4DE;*/
-    /*position: relative;*/
     width: 100%;
     height: 800px; /* Set height to aid with testing parallax features */
     background: url("../images/skyline.jpg");
@@ -214,27 +212,36 @@ p span {
 #projects {
     margin-top: 20px;
 }
-.project,
-.project img {
+.project {
     width: 300px;
     height: auto;
     float: left;
     background: white;
 }
+.project img {
+    width: 100%;
+    display: block;
+    -webkit-transform:  scale(1);
+    -moz-transform:     scale(1);
+    transform:          scale(1);
+    transition: all 0.3s ease-in-out;
+}
 .project {
     position: relative;
-    margin: 20px 60px;
+    margin: 20px 50px;
     opacity: 0;
     transform: translateY(-20px);
-    transition: all 0.3s ease-in;
 }
 .show {
     opacity: 1;
     transform: translateY(0px);
 }
-.project li {
+.project li,
+.project a {
     text-decoration: none;
     list-style-type: none;
+}
+.project li {
     border: 1px solid black;
 }
 #projects-list li {
@@ -242,24 +249,62 @@ p span {
     display: table;     /*sets width of li elements to anchor text width*/
     color: #000099;
 }
-#projects-list li:hover > div {
+figure {
+    overflow: hidden;
+}
+#projects-list li:hover > figure img {
+    -webkit-transform:  scale(1.1);
+    -moz-transform:     scale(1.1);
+    transform:          scale(1.1);
+    border: 1px solid black;
+}
+#projects-list li:hover > figure figcaption {
     letter-spacing: 0.3em;
     -webkit-transition: letter-spacing 0.4s ease;
     -moz-transition:    letter-spacing 0.4s ease;
     transition:         letter-spacing 0.4s ease;
 }
-#projects-list li div {
+#projects-list li figure figcaption {
     letter-spacing: 0;
     -webkit-transition: letter-spacing 0.4s ease;
     -moz-transition:    letter-spacing 0.4s ease;
     transition:         letter-spacing 0.4s ease;
 }
-/*--------------------------Header----------------------------*/
-/*header {
-    margin: 0.25% 5% 0 5%;
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000099;
+    opacity: 0.9;
+    color: white;
+    padding: 2px 8px;
+}
+/*---------------------------Footer-----------------------------*/
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+/*    display: block;*/
+}
+#main-footer p {
+    padding: 3% 0;
+}
+/*-------------------------LOL pic(scraped idea)----------------*/
+/*Wanted to experiment with a parallax feature, but decided it didn't fit with 
+overall theme of website 10/6/15
+/*#lol {
+    height: 300px;
+}
+div#large-window {
+    height: 300px;
+    background: url("../images/lol.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 200px 0 500px; 
 }*/
-#header-container {
-    /*overflow: hidden;     Need to remove it for drop down to show up*/
+/*--------------------------Header(Not In Use)-----------------------*/
+/*#header-container {
+    /*overflow: hidden;     Need to remove it for drop down to show up
     max-width: 960px;
     margin: 0 auto;
     height: 100px;
@@ -270,10 +315,9 @@ p span {
 }
 #name-header {
     position: relative;
-    max-width: 200px;       /*Size of name and subtitle*/
+    max-width: 200px;       Size of name and subtitle
     float: left;
     margin: 0 3%;
-    /*border: solid red;*/
 }
 div#name-header a:hover {
     text-decoration: none;
@@ -288,19 +332,9 @@ h1 {
 }
 h5 {
     margin: 0 0 20px;
-}
-/*---------------------------Footer-----------------------------*/
-footer {
-    max-width: 100%;
-    margin: 0 auto;
-/*    display: block;*/
-}
-#main-footer p {
-    padding: 3% 0;
-}
-
-/*-------------------------Portfolio---------------------------*/
-#images-wrapper {
+}*/
+/*-------------------------Portfolio(Not In Use)------------------*/
+/*#images-wrapper {
     overflow: visible;
 }
 #imageGallery {
@@ -322,7 +356,7 @@ footer {
     max-width: 100%;
 }
 /*Overlay feature*/
-#overlay {
+/*#overlay {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
@@ -338,7 +372,7 @@ footer {
 #overlay p {
     color: white;
     margin-top: 1%;
-}
+}*/
 
 
 
