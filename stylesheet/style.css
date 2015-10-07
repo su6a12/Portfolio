@@ -14,14 +14,12 @@ section {
 .clearfix {
     zoom: 1;    /*For < IE 8*/
 }
-/*--------------------------Header(new 10-3-15)------------------*/
+/*--------------------------Title Header(new 10-3-15)------------------*/
 #ggb-pic {
     position: relative;
     height: 650px;
     background: url("../images/ggb1.jpg") no-repeat top center fixed;
     background-size: auto 650px;
-    /*background-position: top center;
-    background-attachment: fixed;*/
 }
 div.title {
     text-transform: uppercase;
@@ -52,7 +50,7 @@ p#title3 {
     font-size: 18px;
     margin-top: 50px;
 }
-/*-------------------------About-------------------------------*/
+/*-----------------------------About-------------------------------*/
 #about {
     height: 380px;
     margin: 0 auto;
@@ -75,7 +73,36 @@ p#title3 {
     text-indent: 50px;
 }
 p span {
-    display: none;
+    display: none;  /* This gets faded in as user scrolls */
+}
+/*-------------------------LOL pic(scraped idea)----------------*/
+#lol {
+    position: relative;
+    height: 250px;
+}
+div#lol-window {
+    position: relative;
+    height: 250px;
+    margin-left: 40%;
+    margin-right: 200px;
+    background: url("../images/lol.jpg");
+    background-position: 500px 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div#window-transition {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+div#lol-text {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: white;
 }
 /*-------------------------Nav Bar-----------------------------*/
 #main-nav {
@@ -160,10 +187,6 @@ p span {
     border-right: 50px solid yellow;
 
 }*/
-/*section {
-    max-width: 900px;
-    margin: 0 auto;
-}*/
 /*#main-image {
     position: relative;
     margin: 0 auto;
@@ -196,9 +219,6 @@ p span {
     top: 140px;
     width: 90%;
     margin: 0 auto;
-}
-#about-me span {
-    display: none;
 }*/
 /*-------------------------Projects List-----------------------*/
 #projects-list {
@@ -209,7 +229,7 @@ p span {
     background-size: cover;
     z-index: -10;
 }
-#projects {
+#projects ul {
     margin-top: 20px;
 }
 .project {
@@ -288,20 +308,6 @@ footer {
 #main-footer p {
     padding: 3% 0;
 }
-/*-------------------------LOL pic(scraped idea)----------------*/
-/*Wanted to experiment with a parallax feature, but decided it didn't fit with 
-overall theme of website 10/6/15
-/*#lol {
-    height: 300px;
-}
-div#large-window {
-    height: 300px;
-    background: url("../images/lol.jpg");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0 200px 0 500px; 
-}*/
 /*--------------------------Header(Not In Use)-----------------------*/
 /*#header-container {
     /*overflow: hidden;     Need to remove it for drop down to show up

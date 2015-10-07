@@ -2,16 +2,16 @@ $(window).scroll(function() {
 	var scrollHeight = $(this).scrollTop();
 	// Fades title in and out depending on page position
 	$(".title").css({ 
-							"opacity": 0.8 - scrollHeight / 400,
-							"transform": "translate(0px, " + scrollHeight / 2.5 + "%)"
-							});		// Creates the fading effect for the main title
+									"opacity": 0.8 - scrollHeight / 400,
+									"transform": "translate(0px, " + scrollHeight / 2.5 + "%)"
+									});		// Creates the fading effect for the main title
 
 	// Fades nav bar in and out depending on page position
 	if (scrollHeight >= 400) {
 		$("#main-nav").css({
-							"position": "fixed",
-							"top": 0
-							}).fadeIn(800);
+											"position": "fixed",
+											"top": 0
+											}).fadeIn(800);
 
 		 $("p span").each(function(index) {
           		$(this).delay(index * 1000).fadeIn(1000);
@@ -30,6 +30,16 @@ $(window).scroll(function() {
 			$(".project").eq(index).addClass("show");
 			}, 200 * (index + 1));
 		});
+	}
+
+	if (scrollHeight > $("#lol-window").offset().top - $(window).height()) {
+		var opacity = (scrollHeight - $("#lol-window").offset().top + 200) / (scrollHeight / 3);
+		$("#lol-window").css({
+												"background-position": "600px " + (scrollHeight - $("#lol-window").offset().top + 100) + "px"
+												});
+		$("#window-transition").css({
+																"opacity": opacity
+																});
 	}
 });		// end of window.scroll
 
