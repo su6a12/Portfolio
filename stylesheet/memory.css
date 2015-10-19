@@ -26,13 +26,23 @@ p#memory-result {
 	background-image: url("../images/question-mark.jpg");
 	background-size: contain;
 	cursor: pointer;
-	/*border: solid 1px black;*/
 }
 /*#memory-board.over {
 	-webkit-transform:	rotateY(180deg);
 	-moz-transform:		rotateY(180deg);
 	transform:			rotateY(180deg);
 }*/
+button {
+	display: block;
+	color: white;
+	background: DarkCyan;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+	outline: none;
+	border: none;
+}
 button#memory-reset {
 	display: none;
 	margin: 30px auto;

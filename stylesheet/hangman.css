@@ -21,6 +21,17 @@
 #how-many {
 	margin-top: 3%;
 }
+button {
+	display: block;
+	color: white;
+	background: DarkCyan;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+	outline: none;
+	border: none;
+}
 button#new-word {
 	margin: 50px auto;
 	padding: 1%;

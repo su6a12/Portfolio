@@ -238,7 +238,7 @@ div#lol-text {
     float: left;
     background: white;
 }
-.project img {
+#projects-list li figure img {
     width: 100%;
     display: block;
     -webkit-transform:  scale(1);

@@ -7,10 +7,8 @@ div {
 }
 #controls {
 	position: relative;
-	/*height: 200px;*/
 	width: 400px;
 	margin: 150px auto;
-	/*border: solid blue;*/
 }
 #colorSelect {
 	display: none;
@@ -33,7 +31,6 @@ div {
 	border-radius: 10px;
 	margin: 30px 20px;
 	float: left;
-	/*border: solid green;*/
 }
 button {
 	display: block;
@@ -45,7 +42,6 @@ button {
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 	outline: none;
 	border: none;
-	/*border: solid red;*/
 }
 button:hover {
 	color: black;
@@ -53,16 +49,13 @@ button:hover {
 }
 #sliders-box {
 	position: relative;
-	/*display: none;*/
 	background: #C7FFEF;
 	border-radius: 10px;
 	clear: both;
 }
 .sliders p {
-/*	display: block;*/
 	vertical-align: middle;
 	margin: 20px;
-	/*border: solid black;*/
 }
 .sliders input {
 	position: relative;
@@ -78,5 +71,4 @@ input#blue {
 .sliders label {
 	display: inline-block;
 	margin: 10px 10px;
-	/*border: solid red;*/
 }
