@@ -1,0 +1,60 @@
+#hangman-qs,
+#hangman-game {
+	display: block;
+	text-align: center;
+	font-size: 150%;
+	margin-top: 50px;
+}
+#hangman-game {
+	display: none;
+}
+#hangman-game div {
+	margin-bottom: 50px;
+}
+#hangman-qs input,
+#hangman-game input {
+	width: 50px;
+}
+#hangman-qs > div {
+	display: block;
+}
+#how-many {
+	margin-top: 3%;
+}
+button#new-word {
+	margin: 50px auto;
+	padding: 1%;
+}
+#word-display {
+	text-align: center;
+	margin: 0 auto;
+}
+#word-display ul {
+	display: block;
+	list-style: none;
+	font-size: 60px;
+}
+#word-display li {
+	display: inline;
+	margin: 0 3%;
+}
+#hangman-game button {
+	display: inline;
+	margin-left: 3%;
+}
+#wrong-guesses {
+	display: block;
+	margin-top: 100px;
+}
+#incorrect-guesses li {
+	text-decoration: none;
+	list-style: none;
+	display: inline;
+	margin: 0 2%;
+}
+#hangman-game-reset {
+	display: none;
+}
+#hangman-game-reset button {
+	margin: 0 auto;
+}

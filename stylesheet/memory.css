@@ -1,0 +1,39 @@
+section {
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+p#memory-result {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+#memory-board {
+	position: relative;
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+}
+#memory-board table {
+	position: relative;
+	margin: 0 auto;
+	border-spacing: 5px;		/*Give tiles some space*/
+	border-collapse: separate;	/*in between*/
+}
+#memory-board td {
+	width: 150px;
+	height: 150px;
+	background-image: url("../images/question-mark.jpg");
+	background-size: contain;
+	cursor: pointer;
+	/*border: solid 1px black;*/
+}
+/*#memory-board.over {
+	-webkit-transform:	rotateY(180deg);
+	-moz-transform:		rotateY(180deg);
+	transform:			rotateY(180deg);
+}*/
+button#memory-reset {
+	display: none;
+	margin: 30px auto;
+}

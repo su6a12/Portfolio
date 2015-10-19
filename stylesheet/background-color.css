@@ -1,0 +1,82 @@
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+div {
+	display: block;
+}
+#controls {
+	position: relative;
+	/*height: 200px;*/
+	width: 400px;
+	margin: 150px auto;
+	/*border: solid blue;*/
+}
+#colorSelect {
+	display: none;
+}
+#revealColorSelect,
+#change-color,
+#player1-color,
+#player2-color {
+	margin: 10px auto;
+	padding: 5px 10px;
+}
+#change-color {
+	margin-top: -10px;
+}
+#newColorBox {
+	display: block;
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	margin: 30px 20px;
+	float: left;
+	/*border: solid green;*/
+}
+button {
+	display: block;
+	color: white;
+	background: DarkCyan;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+	outline: none;
+	border: none;
+	/*border: solid red;*/
+}
+button:hover {
+	color: black;
+	background: white;
+}
+#sliders-box {
+	position: relative;
+	/*display: none;*/
+	background: #C7FFEF;
+	border-radius: 10px;
+	clear: both;
+}
+.sliders p {
+/*	display: block;*/
+	vertical-align: middle;
+	margin: 20px;
+	/*border: solid black;*/
+}
+.sliders input {
+	position: relative;
+	display: inline-block;
+}
+input#red,
+input#green,
+input#blue {
+	width: 150px;
+	margin: 10px 10px;
+	float: right;
+}
+.sliders label {
+	display: inline-block;
+	margin: 10px 10px;
+	/*border: solid red;*/
+}

@@ -54,6 +54,7 @@ p#title3 {
 #about {
     height: 380px;
     margin: 0 auto;
+    position: relative;
 }
 #about-img {
     display: block;
@@ -61,13 +62,20 @@ p#title3 {
     width: 300px;
     border-radius: 50%;
     margin: 40px;
+    margin-top: 20px;
     height: 300px;
-    float: left;
+    float: right;
+}
+#about-img img {
+    width: 100%;
 }
 #about-blurb {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 50px;
-    margin-left: 300px;
+    /*margin-right: 300px;*/
+    margin-left: 2%;
+    float: left;
+    margin-right: 400px;
 }
 #about-blurb p {
     text-indent: 50px;
@@ -76,34 +84,43 @@ p span {
     display: none;  /* This gets faded in as user scrolls */
 }
 /*-------------------------LOL pic(scraped idea)----------------*/
-#lol {
-    position: relative;
-    height: 250px;
-}
 div#lol-window {
     position: relative;
-    height: 250px;
-    margin-left: 40%;
-    margin-right: 200px;
+    height: 0;
+    width: 0;
+    /*margin-left: -500px;*/
     background: url("../images/lol.jpg");
-    background-position: 500px 200px;
+    background-position: top left;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /*border-bottom: 500px solid transparent;
+    border-left: 200px solid transparent;
+    border-right: 200px solid white;*/
 }
-div#window-transition {
+div#window-tint {
     background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 0;
+    /*position: absolute;*/
+    /*top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;*/
 }
 div#lol-text {
-    position: relative;
-    text-align: center;
+/*    text-align: left;*/
     font-size: 25px;
     color: white;
+    vertical-align: bottom;
+    left: 0;
+    display: inline-block;
 }
+/*#div1 {
+    height: 0;
+    width: 50;
+    border-bottom: 50px solid orange;
+    border-left: 50px solid purple;
+    border-right: 50px solid yellow;
+
+}*/
 /*-------------------------Nav Bar-----------------------------*/
 #main-nav {
     width: 100%;
@@ -230,7 +247,7 @@ div#lol-text {
     z-index: -10;
 }
 #projects ul {
-    margin-top: 20px;
+    margin: 0;
 }
 .project {
     width: 300px;

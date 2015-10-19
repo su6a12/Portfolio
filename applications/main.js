@@ -35,7 +35,7 @@ $(window).scroll(function() {
 	if (scrollHeight > $("#lol-window").offset().top - $(window).height()) {
 		var opacity = (scrollHeight - $("#lol-window").offset().top + 200) / (scrollHeight / 3);
 		$("#lol-window").css({
-												"background-position": "600px " + (scrollHeight - $("#lol-window").offset().top + 100) + "px"
+												"background-position": "0 " + (scrollHeight - $("#lol-window").offset().top + 100) + "px"
 												});
 		$("#window-transition").css({
 																"opacity": opacity
