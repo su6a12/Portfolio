@@ -241,10 +241,10 @@ div#lol-text {
 #projects-list li figure img {
     width: 100%;
     display: block;
-    -webkit-transform:  scale(1);
+/*    -webkit-transform:  scale(1);
     -moz-transform:     scale(1);
     transform:          scale(1);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;*/
 }
 .project {
     position: relative;
@@ -272,12 +272,12 @@ div#lol-text {
 figure {
     overflow: hidden;
 }
-#projects-list li:hover > figure img {
+/*#projects-list li:hover > figure img {
     -webkit-transform:  scale(1.1);
     -moz-transform:     scale(1.1);
     transform:          scale(1.1);
     border: 1px solid black;
-}
+}*/
 #projects-list li:hover > figure figcaption {
     letter-spacing: 0.3em;
     -webkit-transition: letter-spacing 0.4s ease;
