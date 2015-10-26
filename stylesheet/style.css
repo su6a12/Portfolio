@@ -34,25 +34,25 @@ div.title {
 }
 p#title1 {
     display: block;
-    height: 100px;
     font-size: 100px;
+    margin: 0;
 }
 p#title2 {
     display: block;
-    height: 50px;
+    /*height: 50px;*/
     font-size: 50px;
-    margin-top: 20px;
+    margin-top: -15px;
     letter-spacing: 0.20em;
 }
 p#title3 {
     display: block;
-    height: 18px;
+    /*height: 18px;*/
     font-size: 18px;
     margin-top: 50px;
 }
 /*-----------------------------About-------------------------------*/
 #about {
-    height: 380px;
+    height: 350px;
     margin: 0 auto;
 }
 #about-img {
@@ -65,9 +65,10 @@ p#title3 {
     float: left;
 }
 #about-blurb {
-    font-size: 30px;
-    margin-top: 50px;
-    margin-left: 300px;
+    position: relative;
+    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-right: 2%;
 }
 #about-blurb p {
     text-indent: 50px;
@@ -185,23 +186,10 @@ p span {
     border-right: 50px solid yellow;
 
 }
-/*div#about-me {
-    position: absolute;
-    /*display: none;
-    font-size: 35px;
-    font-family: 'Raleway', Helvetica, sans-serif;
-    text-indent: 80px;
-    color: #505050;
-    z-index: 50;
-    left: 20px;
-    top: 140px;
-    width: 90%;
-    margin: 0 auto;
-}*/
 /*-------------------------Projects List-----------------------*/
 #projects {
     width: 100%;
-    height: 800px; /* Set height to aid with testing parallax features */
+    height: auto; /* Height adjusts to inside content */
     background-image: url("../images/skyline.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -265,6 +253,16 @@ figcaption {
     opacity: 0.9;
     color: white;
     padding: 2px 8px;
+}
+/*---------------------------Contact-----------------------------*/
+#contact {
+    text-align: center;
+    position: relative;
+}
+#contact a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 5% 5% 0;
 }
 /*---------------------------Footer-----------------------------*/
 footer {

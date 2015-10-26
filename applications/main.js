@@ -1,6 +1,6 @@
 $(window).scroll(function() {
 	var scrollHeight = $(this).scrollTop();
-	console.log(scrollHeight);
+	//console.log(scrollHeight);
 	// Fades title in and out depending on page position
 	$(".title").css({ 
 									"opacity": 0.8 - scrollHeight / 400,

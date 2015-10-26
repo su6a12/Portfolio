@@ -1,64 +1,62 @@
-/*--------------------------------------------------------Window size less than 768px*/
-@media only screen and (max-width: 768px) {
-    body {
-        /*background: blue;*/
-    }
+/*--------------------------------------------------------Window size less than 800px*/
+@media only screen and (max-width: 1000px) {
     header,
     section,
     footer {
         width: auto;
         position: relative;
-        margin: 0 5%;
     }
-    div#about-me {
+    .title #title1 {
+        font-size: 55px;
+    }
+    .title #title2 {
+        font-size: 25px;
+    }
+    .title #title3 {
+        font-size: 18px;
+    }
+    section #about {
         font-size: 20px;
     }
-    /*------------------------Header---------------------*/
-        header {
-        /*border: solid red;*/
-        margin-bottom: 15%;
-    }
-    #header-container {
-        margin: 0 0 5% 0;
-    }
-    #name-title {
-        width: 48%;
-    }
     /*------------------------Nav Bar---------------------*/
-    #main-nav {
-        float: right;
-        max-width: 150px;
-        width: 48%;
-        /*border: solid black;*/
-    }
     #main-nav > ul {
         margin: 0 auto;
         padding: 0;
-        text-align: right;
     }
     #main-nav ul li {
         position: relative;
-        display: block;
-        padding: 7% 0;
+        padding: 1% 5%;
+        /*padding: 7% 0;*/
         /*margin: 0 5px 0 0;*/
-        /*border: yellow solid;*/
     }
     #main-nav ul li a {
         margin: 0 10px 0 0;
     }
     #main-nav ul li ul {
         width: 150%;
-        top: 35px;
+        top: 5%;
     }
     #main-nav ul li:hover > ul {
-        margin: 0;
+        margin: -2% 0 0 0;
+        top: 30px;
     }
-    /*-----------------------Portfolio---------------------*/
-    #imageGallery li {
-        float: left;
-        width: 48%;
-        height: auto;
-        margin: 1%;
+    /*------------------------About----------------------*/
+    #about {
+        margin: 0 3%;
+        height: 550px;
+    }
+    #about-img {
+        float: none;
+        margin: 0 auto;
+    }
+    #about-blurb {
+        font-size: 1.9rem;
+        margin: 0 auto;
+    }
+    /*------------------------Contact--------------------*/
+    #contact a img {
+        width: 105px;
+        height: 100px;
     }
 }
 /*--------------------------------------------------------Window size less than 480px*/
@@ -68,97 +66,74 @@
     footer {
         width: auto;
         position: relative;
-        margin: 0 5%;
     }
-    h1 {
-        font-size: 28px;
+    #ggb-pic {
+        height: 500px;
     }
-    div#about-me {
+    .title #title1 {
+        font-size: 40px;
+    }
+    .title #title2 {
+        font-size: 20px;
+    }
+    .title #title3 {
         font-size: 15px;
-        top: 50px;
     }
-    /*------------------------Header---------------------*/
-    header {
-        /*border: solid red;*/
-        margin-bottom: 15%;
-    }
-    #header-container {
-        /*margin: 10% 0;*/
-       /* padding: 10% 0;*/
-    }
-    #name-title {
-        width: 48%;
-    }
-    #name-header {
-        float: left;
-        /*max-width: 100%;*/
-        /*text-align: center;*/
+    section #about {
+        font-size: 15px;
     }
     /*------------------------Nav Bar---------------------*/
-    #main-nav {
-        float: right;
-        /*width: 100%;*/
-    }
     #main-nav ul {
         margin: 0 auto;
         padding: 0;
-        text-align: right;
-        /*border: solid blue;*/
     }
     #main-nav ul li {
         position: relative;
-        /*display: block;*/
-        padding: 5% 0;
-        /*border: solid black;*/
+        padding: 1% 4%;
     }
-/*    #main-nav ul li a {
-        margin: 0 10px 0 0;
-    }*/
     #main-nav ul li ul {
-        width: 150%;
+        top: 5%;
     }
     #main-nav ul li:hover > ul {
-        margin: -5px 0 0 0;
+        margin: -2% 0 0 0;
+        width: 150%;
     }
     #main-nav ul li:hover > ul li {
-        padding: 5% 0;
+        padding: 3% 0;
     }
-    /*-----------------------Portfolio---------------------*/
-    #imageGallery li {
-        float: left;
-        width: 46%;     /*Change to two column layout*/
-        height: auto;
-        margin: 1%;
+    /*------------------------About----------------------*/
+/*    #about {
+        margin: 0 3%;
+        height: 550px;
+    }*/
+    #about-img {
+        width: 200px;
+        height: 200px;
+        float: none;
+        margin: 0 auto;
     }
-    /*-----------------------todo-list---------------------*/
-    button {
-        display: block;
-        color: white;
-        background: DarkCyan;
-        font-size: 14px;
-        cursor: pointer;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-        outline: none;
-        border: none;
-        /*border: solid red;*/
-}
-    #add-item {
-    width: 70%;
+    #about-blurb {
+        font-size: 1.8rem;
+        margin: 0 auto;
     }
-    #incomplete-tasks label {
-        width: 42%;
-        font-size: 14px;
-        margin-right: 10px;
-        /*border: solid black;*/
+    /*------------------------LOL------------------------*/
+    #lol {
+        width: 100%;
     }
-    .editmode input[type="text"] {
-        width: 41%;
-        margin-right: 10px;
-    }
-    #completed-tasks label {
-        width: 42%;
-        font-size: 14px;
-        margin-right: 10px;
+    /*------------------------Contact--------------------*/
+    #contact a img {
+        width: 65px;
+        height: 60px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
