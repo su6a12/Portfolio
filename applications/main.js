@@ -1,5 +1,6 @@
 $(window).scroll(function() {
 	var scrollHeight = $(this).scrollTop();
+	console.log(scrollHeight);
 	// Fades title in and out depending on page position
 	$(".title").css({ 
 									"opacity": 0.8 - scrollHeight / 400,
@@ -23,11 +24,11 @@ $(window).scroll(function() {
 
 	// Fade project thumbnails in and out depending on page position
 	// Start the fade in before the section reaches top of screen
-	if (scrollHeight > $("#projects-list").offset().top - ($(window).height() / 1.5)) {
+	if (scrollHeight > $("#projects").offset().top - ($(window).height() / 1.5)) {
 		$(".project").each(function(index) {
 			setTimeout(function() {
 				// eq() takes the index of a set of DOM elements and only applies code to that
-			$(".project").eq(index).addClass("show");
+			$(".project").eq(index).addClass("showImg");
 			}, 200 * (index + 1));
 		});
 	}
@@ -35,7 +36,7 @@ $(window).scroll(function() {
 	if (scrollHeight > $("#lol-window").offset().top - $(window).height()) {
 		var opacity = (scrollHeight - $("#lol-window").offset().top + 200) / (scrollHeight / 3);
 		$("#lol-window").css({
-												"background-position": "0 " + (scrollHeight - $("#lol-window").offset().top + 100) + "px"
+												"background-position": "center " + (scrollHeight - $("#lol-window").offset().top + 10) + "px"
 												});
 		$("#window-transition").css({
 																"opacity": opacity

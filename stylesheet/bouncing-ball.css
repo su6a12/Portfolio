@@ -11,7 +11,7 @@ div#ball {
 	width: 200px;
 	height: 200px;
 	margin: 30px auto 0;
-	background: DarkCyan;
+	background: #000099;
 	border-radius: 50%;
 	box-shadow: inset -25px -25px 50px rgba(0, 0, 0, 0.5);
 	background-image:	-webkit-linear-gradient(-45deg, rgba(255, 255, 220, 0.3), transparent 100%);

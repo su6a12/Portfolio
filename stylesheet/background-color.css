@@ -35,7 +35,7 @@ div {
 button {
 	display: block;
 	color: white;
-	background: DarkCyan;
+	background: #000099;
 	font-size: 20px;
 	cursor: pointer;
 	border-radius: 10px;
