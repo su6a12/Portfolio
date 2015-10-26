@@ -55,8 +55,8 @@
     }
     /*------------------------Contact--------------------*/
     #contact a img {
-        width: 105px;
-        height: 100px;
+        width: 65px;
+        height: 60px;
     }
 }
 /*--------------------------------------------------------Window size less than 480px*/
@@ -122,8 +122,8 @@
     }
     /*------------------------Contact--------------------*/
     #contact a img {
-        width: 65px;
-        height: 60px;
+        width: 55px;
+        height: 50px;
     }
 }
 
