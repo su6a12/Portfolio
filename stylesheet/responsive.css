@@ -26,8 +26,6 @@
     #main-nav ul li {
         position: relative;
         padding: 1% 5%;
-        /*padding: 7% 0;*/
-        /*margin: 0 5px 0 0;*/
     }
     #main-nav ul li a {
         margin: 0 10px 0 0;
@@ -50,13 +48,19 @@
         margin: 0 auto;
     }
     #about-blurb {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         margin: 0 auto;
+    }
+    /*------------------------LOL------------------------*/
+    #lol {
+        width: 400px;
+        margin: 0 auto;
+        height: auto;
     }
     /*------------------------Contact--------------------*/
     #contact a img {
-        width: 65px;
-        height: 60px;
+        width: 60px;
+        height: 55px;
     }
 }
 /*--------------------------------------------------------Window size less than 480px*/
@@ -116,14 +120,13 @@
         font-size: 1.8rem;
         margin: 0 auto;
     }
-    /*------------------------LOL------------------------*/
-    #lol {
-        width: 100%;
-    }
     /*------------------------Contact--------------------*/
     #contact a img {
-        width: 55px;
-        height: 50px;
+        width: 30px;
+        height: 25px;
+    }
+    #contact a {
+        margin: 3% 3% 0;
     }
 }
 
