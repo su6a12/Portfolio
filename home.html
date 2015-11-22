@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/><!-- HTML5 -->
     <meta name="keywords" content="HTML, CSS, Javascript, jQuery"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
     <title>Melissa Yip | Web Developer</title>
     <link rel="stylesheet" href="stylesheet/normalize.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -13,148 +13,153 @@
     <link rel="stylesheet" href="stylesheet/responsive.css"/>
     <link rel="icon" href="favicon.ico"/>
   </head>
+
   <body>
-    <header id="ggb-pic">
-      <div class="title">
-        <p id="title1">Hi, I'm Melissa</p>
-        <p id="title2">Welcome To My Site</p>
-        <p id="title3">(Please Scroll Down)</p>
-      </div>
-    </header>
+    <div id="main-wrapper">
+      <header id="ggb-pic">
+        <div id="title">
+          <p id="title1">Hi, I'm Melissa</p>
+          <p id="title2">Welcome To My Site</p>
+          <p id="title3">(Please Scroll Down)</p>
+        </div>
+      </header>
 
-    <section id="main-nav">
-      <ul>
-        <li><a href="#about" id="about-link">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul> 
-    </section>
+      <section id="main-nav">
+        <ul>
+          <li><a href="#about" id="about-link">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="https://su6a12m3lon.wordpress.com">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul> 
+      </section>
 
-    <section id="about">
-      <img id="about-img" src="images/headshot.jpg">
-      <div id="about-blurb">
-        <p><span>I'm a self-taught web developer who loves to code and make pretty things on screen.</span><span>  A product manager by day, a coding ninja by night.</span><span>  My joy comes from adding new skills to my ever expanding technology toolkit.</span><span>  That toolkit currently includes HTML5, CSS3, Javascript, jQuery, Bootstrap, Angular.js, Git.</span><span>  I love to learn so my list of projects is constantly growing.</span><span>  Please check out my work and let me know what you think!</span></p>
-      </div>
-    </section>
+      <section id="about">
+        <img id="about-img" src="images/headshot.jpg">
+        <div id="about-blurb">
+          <p><span>I'm a self-taught web developer who loves to code and make pretty things on screen.</span><span>  A product manager by day, a coding ninja by night.</span><span>  My joy comes from adding new skills to my ever expanding technology toolkit.</span><span>  That toolkit currently includes HTML5, CSS3, Javascript, jQuery, Bootstrap, Angular.js, Git.</span><span>  I love to learn so my list of projects is constantly growing.</span><span>  Please check out my work and let me know what you think!</span></p>
+        </div>
+      </section>
 
-    <div id="lol">
+<!--     <div id="lol">
       <div id="lol-window">
         <div id="window-transition"></div>
         <div id="lol-text">Coding Makes Me <strong>Happy</strong>!</div>
       </div>
+    </div> -->
+
+      <section>
+        <div id="projects">
+          <ul>
+            <div class="project">
+              <a href="my_projects/background-color.html">
+                <li>
+                  <figure>
+                    <img src="images/background_color.png" alt="background thumbnail">
+                    <figcaption class="project_name">Background Color</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+            <div class="project">
+              <a href="my_projects/tic-tac-toe.html">
+                <li>
+                  <figure>
+                    <img src="images/tic_tac_toe.png" alt="tic tac toe thumbnail">
+                    <figcaption class="project_name">Play Tic-Tac-Toe</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+            <div class="project">
+              <a href="my_projects/memory.html">
+                <li>
+                  <figure>
+                    <img src="images/memory.png" alt="memory game thumbnail">
+                    <figcaption class="project_name">Test Your Memory</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+            <div class="project">
+              <a href="my_projects/hangman.html">
+                <li>
+                  <figure>
+                    <img src="images/hangman.png" alt="hangman thumbnail">
+                    <figcaption class="project_name">Hangman</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+            <div class="project">
+              <a href="my_projects/analog-clock.html">
+                <li>
+                  <figure>
+                    <img src="images/analog_clock.png" alt="analog clock thumbnail">
+                    <figcaption class="project_name">What Time Is It?</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+            <div class="project">
+              <a href="my_projects/pomodoro.html">
+                <li>
+                  <figure>
+                    <img src="images/pomodoro.png" alt="pomodoro clock thumbnail">
+                    <figcaption class="project_name">Ready, Set, Work!</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+            <div class="project">
+              <a href="my_projects/calculator.html">
+                <li>
+                  <figure>
+                    <img src="images/calculator.png" alt="calculator thumbnail">
+                    <figcaption class="project_name">Calculator</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+            <div class="project">
+              <a href="my_projects/simon.html">
+                <li>
+                  <figure>
+                    <img src="images/simon.png" alt="simon game thumbnail">
+                    <figcaption class="project_name">Simon Game</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+            <div class="project">
+              <a href="my_projects/wiki.html">
+                <li>
+                  <figure>
+                    <img src="images/wiki.png" alt="wiki search thumbnail">
+                    <figcaption class="project_name">Search Wiki</figcaption>
+                  </figure>
+                </li>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div id="contact-info">
+          <a href="mailto:melissasyip@gmail.com" title="Email Me!"><img src="images/email.png" alt="Email"></a>
+          <a href="https://github.com/su6a12" title="Github"><img src="images/github.png" alt="Github Icon"></a>
+          <a href="https://www.linkedin.com/in/melissayip1" title="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
+          <a href="https://twitter.com/su6a12" title="Twitter"><img src="images/twitter.png" alt="Twitter Icon"></a>
+        </div>
+      </section>
+
+      <footer>
+        <div id="main-footer">
+          <p>&copy; Melissa Yip 2015</p>
+        </div>
+      </footer>
     </div>
-
-    <section>
-      <div id="projects">
-        <ul>
-          <div class="project">
-            <a href="my_projects/background-color.html">
-              <li>
-                <figure>
-                  <img src="images/background_color.png" alt="background thumbnail">
-                  <figcaption class="project_name">Background Color</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-          <div class="project">
-            <a href="my_projects/tic-tac-toe.html">
-              <li>
-                <figure>
-                  <img src="images/tic_tac_toe.png" alt="tic tac toe thumbnail">
-                  <figcaption class="project_name">Play Tic-Tac-Toe</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-          <div class="project">
-            <a href="my_projects/memory.html">
-              <li>
-                <figure>
-                  <img src="images/memory.png" alt="memory game thumbnail">
-                  <figcaption class="project_name">Test Your Memory</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-          <div class="project">
-            <a href="my_projects/hangman.html">
-              <li>
-                <figure>
-                  <img src="images/hangman.png" alt="hangman thumbnail">
-                  <figcaption class="project_name">Hangman</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-          <div class="project">
-            <a href="my_projects/analog-clock.html">
-              <li>
-                <figure>
-                  <img src="images/analog_clock.png" alt="analog clock thumbnail">
-                  <figcaption class="project_name">What Time Is It?</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-          <div class="project">
-            <a href="my_projects/pomodoro.html">
-              <li>
-                <figure>
-                  <img src="images/pomodoro.png" alt="pomodoro clock thumbnail">
-                  <figcaption class="project_name">Ready, Set, Work!</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-          <div class="project">
-            <a href="my_projects/calculator.html">
-              <li>
-                <figure>
-                  <img src="images/calculator.png" alt="calculator thumbnail">
-                  <figcaption class="project_name">Calculator</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-          <div class="project">
-            <a href="my_projects/simon.html">
-              <li>
-                <figure>
-                  <img src="images/simon.png" alt="simon game thumbnail">
-                  <figcaption class="project_name">Simon Game</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-          <div class="project">
-            <a href="my_projects/wiki.html">
-              <li>
-                <figure>
-                  <img src="images/wiki.png" alt="wiki search thumbnail">
-                  <figcaption class="project_name">Search Wiki</figcaption>
-                </figure>
-              </li>
-            </a>
-          </div>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div id="contact-info">
-        <a href="mailto:melissasyip@gmail.com" title="Email Me!"><img src="images/email.png" alt="Email"></a>
-        <a href="https://github.com/su6a12" title="Github"><img src="images/github.png" alt="Github Icon"></a>
-        <a href="https://www.linkedin.com/in/melissayip1" title="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
-        <a href="https://twitter.com/su6a12" title="Twitter"><img src="images/twitter.png" alt="Twitter Icon"></a>
-      </div>
-    </section>
-
-    <footer>
-      <div id="main-footer">
-        <p>&copy; Melissa Yip 2015</p>
-      </div>
-    </footer>
+    
     <!-- Beginning of scripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- jQuery -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

@@ -3,7 +3,7 @@
     header,
     section,
     footer {
-        width: auto;
+        width: 100%;
         position: relative;
     }
     .title #title1 {
@@ -29,14 +29,6 @@
     }
     #main-nav ul li a {
         margin: 0 10px 0 0;
-    }
-    #main-nav ul li ul {
-        width: 150%;
-        top: 5%;
-    }
-    #main-nav ul li:hover > ul {
-        margin: -2% 0 0 0;
-        top: 30px;
     }
     /*------------------------About----------------------*/
     #about {
@@ -68,11 +60,11 @@
     header,
     section,
     footer {
-        width: auto;
+        width: 100%;
         position: relative;
     }
     #ggb-pic {
-        height: 500px;
+        height: 450px;
     }
     .title #title1 {
         font-size: 40px;
@@ -93,17 +85,7 @@
     }
     #main-nav ul li {
         position: relative;
-        padding: 1% 4%;
-    }
-    #main-nav ul li ul {
-        top: 5%;
-    }
-    #main-nav ul li:hover > ul {
-        margin: -2% 0 0 0;
-        width: 150%;
-    }
-    #main-nav ul li:hover > ul li {
-        padding: 3% 0;
+        padding: 2% 4%;
     }
     /*------------------------About----------------------*/
 /*    #about {

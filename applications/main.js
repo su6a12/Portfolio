@@ -2,7 +2,7 @@ $(window).scroll(function() {
 	var scrollHeight = $(this).scrollTop();
 	//console.log(scrollHeight);
 	// Fades title in and out depending on page position
-	$(".title").css({ 
+	$("#title").css({ 
 									"opacity": 0.8 - scrollHeight / 400,
 									"transform": "translate(0px, " + scrollHeight / 2.5 + "%)"
 									});		// Creates the fading effect for the main title
@@ -33,15 +33,15 @@ $(window).scroll(function() {
 		});
 	}
 
-	if (scrollHeight > $("#lol-window").offset().top - $(window).height()) {
-		var opacity = (scrollHeight - $("#lol-window").offset().top + 200) / (scrollHeight / 3);
-		$("#lol-window").css({
-												"background-position": "center " + (scrollHeight - $("#lol-window").offset().top + 10) + "px"
-												});
-		$("#window-transition").css({
-																"opacity": opacity
-																});
-	}
+	// if (scrollHeight > $("#lol-window").offset().top - $(window).height()) {
+	// 	var opacity = (scrollHeight - $("#lol-window").offset().top + 200) / (scrollHeight / 3);
+	// 	$("#lol-window").css({
+	// 											"background-position": "center " + (scrollHeight - $("#lol-window").offset().top + 10) + "px"
+	// 											});
+	// 	$("#window-transition").css({
+	// 															"opacity": opacity
+	// 															});
+	// }
 });		// end of window.scroll
 
 // Go to position on page where desired section is

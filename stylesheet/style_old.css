@@ -1,0 +1,283 @@
+html,
+body,
+section {
+    margin: 0 auto;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;    /*For < IE 8*/
+}
+/*--------------------------Title Header(new 10-3-15)------------------*/
+#ggb-pic {
+    width: 100%;
+    position: relative;
+    height: 650px;
+    background: url("../images/ggb1.jpg") no-repeat top center fixed;
+    background-size: 100% 650px;
+}
+div.title {
+    text-transform: uppercase;
+    width: 100%;
+    color: #000099;     /* Dark Blue */
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    opacity: 0.8;
+}
+p#title1 {
+    display: block;
+    font-size: 100px;
+    margin: 0;
+}
+p#title2 {
+    display: block;
+    font-size: 50px;
+    margin-top: -10px;
+    letter-spacing: 0.20em;
+}
+p#title3 {
+    display: block;
+    font-size: 18px;
+    margin-top: 50px;
+}
+/*-----------------------------About-------------------------------*/
+#about {
+    height: 350px;
+    margin: 0 auto;
+}
+#about-img {
+    display: block;
+    position: relative;
+    width: 300px;
+    border-radius: 50%;
+    margin: 40px;
+    height: 300px;
+    float: left;
+}
+#about-blurb {
+    position: relative;
+    font-size: 2.3rem;
+    margin-top: 5%;
+    margin-right: 2%;
+    z-index: 100;
+}
+#about-blurb p {
+    text-indent: 50px;
+}
+p span {
+    display: none;  /* This gets faded in as user scrolls */
+}
+/*-------------------------LOL pic------------------------------*/
+#lol {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+#lol-window:before {
+    margin-top: -50px;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    -webkit-transform:  skewY(4deg);
+    -moz-transform:     skewY(4deg);
+    transform:          skewY(4deg);
+}
+#lol-window:after {
+    margin-bottom: -60px;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    -webkit-transform:  skewY(4deg);
+    -moz-transform:     skewY(4deg);
+    transform:          skewY(4deg);
+}
+#lol-window {
+    position: relative;
+    height: 333px;
+    background-image: url("../images/lol.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -100;
+}
+#window-transition {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#lol-text {
+    text-align: left;
+    padding-top: 50px;
+    font-size: 25px;
+    color: white;
+}
+/*-------------------------Nav Bar-----------------------------*/
+#main-nav {
+    width: 100%;
+    text-align: center;
+    background: #000099; /* Dark Blue */
+    opacity: 0.9;
+    display: none;
+    z-index: 999;
+}
+#main-nav ul {
+    list-style: none;
+    display: block;
+    margin: 0;
+}
+#main-nav ul li {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    padding: 1% 5%;
+    border-radius: 5px;
+}
+#main-nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: .2em;
+    color: white;
+}
+#main-nav li:hover {
+    background-color: #4C89FF;      /* Light Blue */
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition:    background-color 0.4s ease;
+    transition:         background-color 0.4s ease;
+}
+/*Learning about creating a triangle
+/*#div1 {
+    height: 0;
+    width: 50;
+    border-bottom: 50px solid orange;
+    border-left: 50px solid purple;
+    border-right: 50px solid yellow;
+
+}
+/*-------------------------Projects List-----------------------*/
+#projects {
+    position: relative;
+    width: 100%;
+    /*height: auto; /* Height adjusts to inside content */
+    /*background-image: url("../images/skyline.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 200;*/
+}
+#projects:after {
+    content: "";
+    width: 100%;
+    background-image: url("../images/skyline.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 200;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -10;
+}
+#projects ul {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.project {
+    display: inline-block;
+    margin: 30px 40px;
+    opacity: 0;
+    width: 300px;
+    height: auto;
+    background: white;
+    transform: translateY(-20px);
+}
+#projects li figure img {
+    width: 100%;
+}
+.showImg {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.project li,
+.project a {
+    text-decoration: none;
+    list-style-type: none;
+}
+.project li {
+    border: 1px solid black;
+}
+#projects li {
+    font-size: 1.5em;
+    /*display: table;     sets width of li elements to anchor text width*/
+    color: #000099;
+}
+figure {
+    overflow: hidden;
+}
+#projects li:hover > figure figcaption {
+    letter-spacing: 0.3em;
+    -webkit-transition: letter-spacing 0.4s ease;
+    -moz-transition:    letter-spacing 0.4s ease;
+    transition:         letter-spacing 0.4s ease;
+}
+#projects li figure figcaption {
+    letter-spacing: 0;
+    -webkit-transition: letter-spacing 0.4s ease;
+    -moz-transition:    letter-spacing 0.4s ease;
+    transition:         letter-spacing 0.4s ease;
+}
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000099;
+    opacity: 0.9;
+    color: white;
+    padding: 2px 8px;
+}
+/*---------------------------Contact-----------------------------*/
+#contact {
+    text-align: center;
+    position: relative;
+}
+#contact a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 5% 5% 0;
+}
+/*---------------------------Footer-----------------------------*/
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+#main-footer p {
+    padding: 3% 3%;
+}
+
+
+
+
+
