@@ -56,7 +56,7 @@
     }
 }
 /*--------------------------------------------------------Window size less than 480px*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
     header,
     section,
     footer {
@@ -66,16 +66,16 @@
     #ggb-pic {
         height: 450px;
     }
-    .title #title1 {
+    p#title1 {
         font-size: 40px;
     }
-    .title #title2 {
+    p#title2 {
         font-size: 20px;
     }
-    .title #title3 {
+    p#title3 {
         font-size: 15px;
     }
-    section #about {
+    section#about {
         font-size: 15px;
     }
     /*------------------------Nav Bar---------------------*/
@@ -84,8 +84,9 @@
         padding: 0;
     }
     #main-nav ul li {
-        position: relative;
-        padding: 2% 4%;
+        /*position: relative;*/
+        display: block;
+        padding: 1% 0;
     }
     /*------------------------About----------------------*/
 /*    #about {

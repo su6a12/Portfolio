@@ -1,6 +1,6 @@
 $dark_blue: #000099;
 $light_blue: #4C89FF;
-$max_width: 100%;
+$full_width: 100%;
 
 body {
   font-size: 12px;
@@ -27,16 +27,16 @@ body {
 }
 /*--------------------------Title Header(new 10-3-15)------------------*/
 #ggb-pic {
-  width: $max_width;
+  width: $full_width;
   position: relative;
   height: 650px;
   background: url("../images/ggb1.jpg") no-repeat top center fixed;
-  background-size: $max_width 650px;
+  background-size: $full_width 650px;
 }
 
 div#title {
   text-transform: uppercase;
-  width: $max_width;
+  width: $full_width;
   color: $dark_blue;
   position: absolute;
   text-align: center;
@@ -103,7 +103,7 @@ p#title3 {
   margin-top: -50px;
   content: "";
   left: 0;
-  width: $max_width;
+  width: $full_width;
   height: 100px;
   position: absolute;
   background-color: white;
@@ -117,7 +117,7 @@ p#title3 {
   content: "";
   bottom: 0;
   left: 0;
-  width: $max_width;
+  width: $full_width;
   height: 100px;
   position: absolute;
   background-color: white;
@@ -127,7 +127,7 @@ p#title3 {
 }
 
 #lol-window {
-  width: $max_width;
+  width: $full_width;
   position: relative;
   height: 333px;
   background-image: url("../images/lol.jpg");
@@ -154,7 +154,7 @@ p#title3 {
 }
 /*-------------------------Nav Bar-----------------------------*/
 #main-nav {
-  width: $max_width;
+  width: $full_width;
   text-align: center;
   background: $dark_blue;
   opacity: 0.9;
@@ -193,13 +193,13 @@ p#title3 {
 /*-------------------------Projects List-----------------------*/
 #projects {
   position: relative;
-  width: $max_width;
+  width: $full_width;
   height: 100%;
 }
 
 #projects:after {
   content: "";
-  width: $max_width;
+  width: $full_width;
   z-index: 200;
   position: absolute;
   left: 0;
@@ -216,13 +216,13 @@ p#title3 {
 	ul {
     position: relative;
     margin: 0;
-    width: $max_width;
+    width: $full_width;
     text-align: center;
     li {
     	font-size: 1.5em;
     	color: $dark_blue;
     	figure img {
-    		width: $max_width;
+    		width: $full_width;
     	}
 		}
   }
@@ -285,7 +285,7 @@ figure {
 }
 /*---------------------------Footer-----------------------------*/
 footer {
-  max-width: $max-width;
+  max-width: $full_width;
   // height: 3%;
   // position: relative;
 }
