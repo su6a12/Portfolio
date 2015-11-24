@@ -115,13 +115,13 @@ h5 {
     letter-spacing: 0.2em;
     font-weight: normal;
 }
-/*---------------------ball-click-------------------------*/
-#canvas {
-	position: relative;
-	margin: 0 auto;
+/*--------------------------ball-click------------------------------*/
+#circle {
+    position: relative;
 }
-#canvas-reset {
-	margin: 0 auto;
+h1 {
+    display: block;
+    text-align: center;
 }
 /*--------------------------smarter-than-cat------------------------*/
 #smarts-intro {
