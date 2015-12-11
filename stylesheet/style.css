@@ -1,4 +1,5 @@
 body {
+  position: relative;
   font-size: 12px;
   margin: 0 auto;
   font-family: 'Raleway', Helvetica, sans-serif; }
@@ -136,8 +137,8 @@ p#title3 {
 /*-------------------------Nav Bar-----------------------------*/
 #main-nav {
   width: 100%;
-  text-align: center;
   background: #000099;
+  text-align: center;
   opacity: 0.9;
   display: none;
   /* Scrolling to a certain point on page reveals nav bar */
@@ -165,6 +166,10 @@ p#title3 {
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
   transition: background-color 0.4s ease; }
+
+.navbar-collapse {
+  border: 0;
+  padding: 0; }
 
 /*-------------------------Projects List-----------------------*/
 #projects {

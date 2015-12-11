@@ -3,6 +3,7 @@ $light_blue: #4C89FF;
 $full_width: 100%;
 
 body {
+  position: relative;
   font-size: 12px;
   margin: 0 auto;
   font-family: 'Raleway', Helvetica, sans-serif;
@@ -155,8 +156,8 @@ p#title3 {
 /*-------------------------Nav Bar-----------------------------*/
 #main-nav {
   width: $full_width;
-  text-align: center;
   background: $dark_blue;
+  text-align: center;
   opacity: 0.9;
   display: none; /* Scrolling to a certain point on page reveals nav bar */
   z-index: 999;
@@ -189,6 +190,10 @@ p#title3 {
   -webkit-transition: background-color 0.4s ease;
   -moz-transition:    background-color 0.4s ease;
   transition:         background-color 0.4s ease;
+}
+.navbar-collapse {
+  border: 0;
+  padding: 0;
 }
 /*-------------------------Projects List-----------------------*/
 #projects {

@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div id="main-wrapper">
+    <div id="container">
       <header id="ggb-pic">
         <div id="title">
           <p id="title1">Hi, I'm Melissa</p>
@@ -24,28 +24,34 @@
         </div>
       </header>
 
-      <section id="main-nav">
-        <ul>
-          <li><a href="#about" id="about-link">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="http://lifeofmel.com/blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul> 
-      </section>
+      <nav class="navbar-default">
+        <div id="main-nav" class="container">
+          <div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
-      <section id="about">
+          <div class="collapse navbar-collapse">
+            <ul>
+              <li><a href="#about" id="about-link">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="http://lifeofmel.com/blog">Blog</a></li>
+              <li><a href="#contact-info">Contact</a></li>
+            </ul>
+          </div><!-- navbar-collapse -->
+        </div><!-- container-fluid -->
+      </nav>
+
+      <div id="about">
         <img id="about-img" src="images/headshot.jpg">
         <div id="about-blurb">
-          <p><span>I'm a self-taught web developer who loves to code and make pretty things on screen.</span><span>  A product manager by day, a coding ninja by night.</span><span>  My joy comes from adding new skills to my ever expanding technology toolkit.</span><span>  That toolkit currently includes HTML, CSS, Javascript, jQuery, Bootstrap, Angular.js, Git, Sass.</span><span>  I love to learn so my list of projects is constantly growing.</span><span>  Please check out my work and let me know what you think!</span></p>
+          <p><span>I'm a self-taught web developer who loves to code and make pretty things on screen.</span><span>  A product manager by day, a coding ninja by night.</span><span>  My joy comes from adding new skills to my ever expanding technology toolkit.</span><span>  That toolkit currently includes HTML, CSS, Javascript, jQuery, Bootstrap, Git, Sass, SQL.</span><span>  I love to learn so my list of projects is constantly growing.</span><span>  Please check out my work and let me know what you think!</span></p>
         </div>
-      </section>
-
-<!--     <div id="lol">
-      <div id="lol-window">
-        <div id="window-transition"></div>
-        <div id="lol-text">Coding Makes Me <strong>Happy</strong>!</div>
       </div>
-    </div> -->
 
       <section>
         <div id="projects">
@@ -171,11 +177,11 @@
     </div>
     
     <!-- Beginning of scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- jQuery -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- jQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="applications/main.js"></script>
   </body>
 </html>

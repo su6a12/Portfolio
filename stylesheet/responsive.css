@@ -21,11 +21,11 @@
     /*------------------------Nav Bar---------------------*/
     #main-nav > ul {
         margin: 0 auto;
-        padding: 0;
+        padding: 0; 
     }
     #main-nav ul li {
         position: relative;
-        padding: 1% 5%;
+        padding: 2% 5%;
     }
     #main-nav ul li a {
         margin: 0 10px 0 0;
@@ -40,7 +40,7 @@
         margin: 0 auto;
     }
     #about-blurb {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
         margin: 0 auto;
     }
     /*------------------------LOL------------------------*/
@@ -53,6 +53,18 @@
     #contact a img {
         width: 60px;
         height: 55px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /*------------------------Nav Bar---------------------*/
+/*    #main-nav ul {
+        margin: 0 auto;
+        padding: 0;
+        background: #000099;
+    }*/
+    #main-nav ul li {
+        display: block;
+        padding: 2% 0;
     }
 }
 /*--------------------------------------------------------Window size less than 480px*/
@@ -82,11 +94,11 @@
     #main-nav ul {
         margin: 0 auto;
         padding: 0;
+        background: #000099;
     }
     #main-nav ul li {
-        /*position: relative;*/
         display: block;
-        padding: 1% 0;
+        padding: 4% 0;
     }
     /*------------------------About----------------------*/
 /*    #about {
