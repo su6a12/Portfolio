@@ -2,8 +2,10 @@ $dark_blue: #000099;
 $light_blue: #4C89FF;
 $full_width: 100%;
 
+html,
 body {
   position: relative;
+  height: 100%;
   font-size: 12px;
   margin: 0 auto;
   font-family: 'Raleway', Helvetica, sans-serif;
@@ -26,6 +28,13 @@ body {
 #main-wrapper {
   position: relative;
 }
+
+#container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /*--------------------------Title Header(new 10-3-15)------------------*/
 #ggb-pic {
   width: $full_width;

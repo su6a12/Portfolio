@@ -7,6 +7,9 @@ $(document).ready(function() {
 		// Stop the button from blinking after it's been clicked
 		$(this).removeClass("blink");
 
+		// Disable button once game has started
+		$("button").attr("disabled", true);
+
 		// Set first reel to stop between 500 to 800 milliseconds
 		var random1 = Math.floor(Math.random() * (800 - 500 + 1)) + 500;
 		// Set second reel to stop between 1000 to 1300 milliseconds
@@ -51,6 +54,7 @@ $(document).ready(function() {
 
 	// Check if player is a winner
 	function isWinner() {
+
 		var drinks = ["Coffee", "Tea", "Espresso"]
 		var images = { "winner": "../images/winner.png", "loser": "../images/cry.png" };
 		var isWinnerFlag;
@@ -88,6 +92,8 @@ $(document).ready(function() {
 
 	// Reset function to start a new round
 	function reset() {
+		// re-enable start button
+		$("button").attr("disabled", false);
 		$("button").addClass("blink");
 		blinking();
 		//$("#slot1, #slot2, #slot3").children().removeClass("active").addClass("inactive");
