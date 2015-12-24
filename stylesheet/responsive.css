@@ -40,7 +40,7 @@
         margin: 0 auto;
     }
     #about-blurb {
-        font-size: 1.9rem;
+        font-size: 1.2em;
         margin: 0 auto;
     }
     /*------------------------LOL------------------------*/
@@ -48,11 +48,6 @@
         width: 400px;
         margin: 0 auto;
         height: auto;
-    }
-    /*------------------------Contact--------------------*/
-    #contact a img {
-        width: 60px;
-        height: 55px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -62,19 +57,38 @@
         padding: 0;
         background: #000099;
     }*/
+    #ggb-pic {
+        height: 450px;
+    }
+    p#title1 {
+        font-size: 50px;
+    }
+    p#title2 {
+        font-size: 22px;
+    }
+    p#title3 {
+        font-size: 15px;
+    }
     #main-nav ul li {
         display: block;
         padding: 2% 0;
     }
+    #about-img {
+        width: 250px;
+        height: 250px;
+    }
+    #about-blurb {
+        font-size: 0.95em;
+    }
 }
 /*--------------------------------------------------------Window size less than 480px*/
 @media only screen and (max-width: 500px) {
-    header,
+/*    header,
     section,
     footer {
         width: 100%;
         position: relative;
-    }
+    }*/
     #ggb-pic {
         height: 450px;
     }
@@ -112,7 +126,7 @@
         margin: 0 auto;
     }
     #about-blurb {
-        font-size: 1.8rem;
+        font-size: 1em;
         margin: 0 auto;
     }
     /*------------------------Contact--------------------*/
@@ -124,14 +138,3 @@
         margin: 3% 3% 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-

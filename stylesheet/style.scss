@@ -30,6 +30,7 @@ body {
 }
 
 #container {
+  position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -41,7 +42,8 @@ body {
   position: relative;
   height: 650px;
   background: url("../images/ggb1.jpg") no-repeat top center fixed;
-  background-size: $full_width 650px;
+  // background-size: $full_width 650px;
+  background-size: cover;
 }
 
 div#title {
@@ -103,65 +105,65 @@ p#title3 {
   }
 }
 /*-------------------------LOL pic(REMOVED)------------------------------*/
-#lol {
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
-}
+// #lol {
+//   width: 500px;
+//   margin: 0 auto;
+//   text-align: center;
+// }
 
-#lol-window:before {
-  margin-top: -50px;
-  content: "";
-  left: 0;
-  width: $full_width;
-  height: 100px;
-  position: absolute;
-  background-color: white;
-  -webkit-transform:  skewY(4deg);
-  -moz-transform:     skewY(4deg);
-  transform:          skewY(4deg);
-}
+// #lol-window:before {
+//   margin-top: -50px;
+//   content: "";
+//   left: 0;
+//   width: $full_width;
+//   height: 100px;
+//   position: absolute;
+//   background-color: white;
+//   -webkit-transform:  skewY(4deg);
+//   -moz-transform:     skewY(4deg);
+//   transform:          skewY(4deg);
+// }
 
-#lol-window:after {
-  margin-bottom: -60px;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: $full_width;
-  height: 100px;
-  position: absolute;
-  background-color: white;
-  -webkit-transform:  skewY(4deg);
-  -moz-transform:     skewY(4deg);
-  transform:          skewY(4deg);
-}
+// #lol-window:after {
+//   margin-bottom: -60px;
+//   content: "";
+//   bottom: 0;
+//   left: 0;
+//   width: $full_width;
+//   height: 100px;
+//   position: absolute;
+//   background-color: white;
+//   -webkit-transform:  skewY(4deg);
+//   -moz-transform:     skewY(4deg);
+//   transform:          skewY(4deg);
+// }
 
-#lol-window {
-  width: $full_width;
-  position: relative;
-  height: 333px;
-  background-image: url("../images/lol.jpg");
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  z-index: -100;
-}
+// #lol-window {
+//   width: $full_width;
+//   position: relative;
+//   height: 333px;
+//   background-image: url("../images/lol.jpg");
+//   background-position: center 0;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   z-index: -100;
+// }
 
-#window-transition {
-  background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+// #window-transition {
+//   background-color: rgba(255, 255, 255, 0.7);
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+// }
 
-#lol-text {
-  text-align: left;
-  padding-top: 50px;
-  font-size: 25px;
-  color: white;
-}
+// #lol-text {
+//   text-align: left;
+//   padding-top: 50px;
+//   font-size: 25px;
+//   color: white;
+// }
 /*-------------------------Nav Bar-----------------------------*/
 #main-nav {
   width: $full_width;
@@ -205,12 +207,6 @@ p#title3 {
   padding: 0;
 }
 /*-------------------------Projects List-----------------------*/
-#projects {
-  position: relative;
-  width: $full_width;
-  height: 100%;
-}
-
 #projects:after {
   content: "";
   width: $full_width;
@@ -223,10 +219,13 @@ p#title3 {
   z-index: -10;
   background-image: url("../images/skyline.jpg");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
 }
 
 #projects {
+  position: relative;
+  width: $full_width;
+  // height: 100%;
 	ul {
     position: relative;
     margin: 0;
@@ -251,7 +250,6 @@ p#title3 {
   margin: 30px 40px;
   opacity: 0;
   width: 300px;
-  // height: auto;
   background: white;
   transform: translateY(-20px);
   li {
@@ -295,12 +293,13 @@ figure {
     display: inline-block;
     text-decoration: none;
     margin: 5% 5% 0;
+    color: black;
+
   }
 }
 /*---------------------------Footer-----------------------------*/
 footer {
   max-width: $full_width;
-  // height: 3%;
   // position: relative;
 }
 
