@@ -1,0 +1,23 @@
+.container {
+	background: url("../images/purple_skies.jpeg");
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+.center {
+	text-align: center;
+}
+
+.row {
+	margin-top: 5%;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+
+.alert {
+	display: none;
+}
