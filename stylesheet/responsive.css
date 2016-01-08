@@ -5,6 +5,7 @@
     footer {
         width: 100%;
         position: relative;
+        margin: 0;
     }
     .title #title1 {
         font-size: 55px;
@@ -89,9 +90,9 @@
         width: 100%;
         position: relative;
     }*/
-    #ggb-pic {
+/*    #ggb-pic {
         height: 450px;
-    }
+    }*/
     p#title1 {
         font-size: 40px;
     }
@@ -126,7 +127,7 @@
         margin: 0 auto;
     }
     #about-blurb {
-        font-size: 1em;
+        font-size: 0.8em;
         margin: 0 auto;
     }
     /*------------------------Contact--------------------*/

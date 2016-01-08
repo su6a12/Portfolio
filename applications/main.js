@@ -1,11 +1,15 @@
+console.log($("#header").height());
 $(window).scroll(function() {
 	var scrollHeight = $(this).scrollTop();
-	//console.log(scrollHeight);
+
+	if (scrollHeight < $("#header").height()) {
 	// Fades title in and out depending on page position
-	$("#title").css({ 
-									"opacity": 0.8 - scrollHeight / 400,
-									"transform": "translate(0px, " + scrollHeight / 2.5 + "%)"
-									});		// Creates the fading effect for the main title
+		$("#title").css({ 
+										"opacity": 0.8 - scrollHeight / 400,
+										"transform": "translate(0px, " + scrollHeight / 2.5 + "%)"
+										});		// Creates the fading effect for the main title
+
+	}
 
 	// Fades nav bar in and out depending on page position
 	if (scrollHeight >= 400) {
@@ -15,8 +19,8 @@ $(window).scroll(function() {
 											}).fadeIn(800);
 
 		 $("p span").each(function(index) {
-          		$(this).delay(index * 1000).fadeIn(1000);
-        			});
+	        		$(this).delay(index * 1000).fadeIn(1000);
+	      			});
 	}
 	if (scrollHeight < 400) {
 		$("#main-nav").fadeOut("fast");

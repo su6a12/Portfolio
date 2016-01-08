@@ -42,8 +42,8 @@ body {
   position: relative;
   height: 650px;
   background: url("../images/ggb1.jpg") no-repeat top center fixed;
-  // background-size: $full_width 650px;
   background-size: cover;
+  overflow: hidden;
 }
 
 div#title {
