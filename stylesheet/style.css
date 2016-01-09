@@ -33,7 +33,8 @@ body {
   position: relative;
   height: 650px;
   background: url("../images/ggb1.jpg") no-repeat top center fixed;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 div#title {
   text-transform: uppercase;
@@ -70,7 +71,7 @@ p#title3 {
   position: relative;
   width: 300px;
   border-radius: 50%;
-  margin: 40px 40px 0 40px;
+  margin: -10px 40px 0 40px;
   height: 300px;
   float: left; }
 
