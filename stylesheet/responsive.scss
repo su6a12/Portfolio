@@ -1,0 +1,90 @@
+/*----------------- Max-Width 1000px -------------------*/
+@media only screen and (max-width: 1000px) {
+	#about {
+		height: 475px;
+		font-size: 20px;
+	}
+
+	#about-img {
+		width: 200px;
+		height: 200px;
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+/*----------------- Max-Width 768px -------------------*/
+@media only screen and (max-width: 768px) {
+	#ggb-pic {
+		height: 500px;
+	}
+
+	div#title {
+		font-size: 13px;
+	}
+
+	#about-blurb p {
+		margin: 20px 5px;
+	}
+
+	#main-nav ul li {
+		display: block;
+		padding: 2% 0;
+	}
+}
+
+/*----------------- Max-Width 572px -------------------*/
+@media only screen and (max-width: 572px) {
+	div#title {
+		font-size: 10px;
+	}
+
+	#about {
+		height: 500px;
+		font-size: 13px;
+	}
+
+	#about-img {
+		width: 200px;
+		height: 200px;
+		float: none;
+		margin: 0 auto;
+	}
+
+	#about-blurb {
+		font-size: 1.5em;
+	}
+}
+
+/*----------------- Max-Width 480px -------------------*/
+@media only screen and (max-width: 480px) {
+	html,
+	body {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	#ggb-pic {
+		height: 375px;
+		background-size: cover;
+	}
+
+	div#title {
+		font-size: 9px;
+
+	}
+
+	#about {
+		font-size: 11px;
+	}
+
+	#contact-info a img {
+    width: 30px;
+    height: 25px;
+  }
+  
+  #contact-info a {
+    margin: 3% 3% 0;
+  }
+}

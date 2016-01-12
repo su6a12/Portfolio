@@ -1,8 +1,8 @@
-console.log($("#header").height());
 $(window).scroll(function() {
 	var scrollHeight = $(this).scrollTop();
+	var headerHeight = $("#header").height();
 
-	if (scrollHeight < $("#header").height()) {
+	if (scrollHeight < headerHeight) {
 	// Fades title in and out depending on page position
 		$("#title").css({ 
 										"opacity": 0.8 - scrollHeight / 400,
@@ -12,17 +12,18 @@ $(window).scroll(function() {
 	}
 
 	// Fades nav bar in and out depending on page position
-	if (scrollHeight >= 400) {
+	// Want to fade in nav bar before about me section, so starting 
+	if (scrollHeight >= (headerHeight - 75)) {
 		$("#main-nav").css({
 											"position": "fixed",
 											"top": 0
-											}).fadeIn(800);
+											}).fadeIn(600);
 
 		 $("p span").each(function(index) {
 	        		$(this).delay(index * 1000).fadeIn(1000);
 	      			});
 	}
-	if (scrollHeight < 400) {
+	if (scrollHeight < (headerHeight - 75)) {
 		$("#main-nav").fadeOut("fast");
 	}
 

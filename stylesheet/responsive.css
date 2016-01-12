@@ -1,141 +1,66 @@
-/*--------------------------------------------------------Window size less than 800px*/
+/*----------------- Max-Width 1000px -------------------*/
 @media only screen and (max-width: 1000px) {
-    header,
-    section,
-    footer {
-        width: 100%;
-        position: relative;
-        margin: 0;
-    }
-    .title #title1 {
-        font-size: 55px;
-    }
-    .title #title2 {
-        font-size: 25px;
-    }
-    .title #title3 {
-        font-size: 18px;
-    }
-    section #about {
-        font-size: 20px;
-    }
-    /*------------------------Nav Bar---------------------*/
-    #main-nav > ul {
-        margin: 0 auto;
-        padding: 0; 
-    }
-    #main-nav ul li {
-        position: relative;
-        padding: 2% 5%;
-    }
-    #main-nav ul li a {
-        margin: 0 10px 0 0;
-    }
-    /*------------------------About----------------------*/
-    #about {
-        margin: 0 3%;
-        height: 550px;
-    }
-    #about-img {
-        float: none;
-        margin: 0 auto;
-    }
-    #about-blurb {
-        font-size: 1.2em;
-        margin: 0 auto;
-    }
-    /*------------------------LOL------------------------*/
-    #lol {
-        width: 400px;
-        margin: 0 auto;
-        height: auto;
-    }
-}
+  #about {
+    height: 475px;
+    font-size: 20px; }
+
+  #about-img {
+    width: 200px;
+    height: 200px;
+    float: none;
+    margin: 0 auto; } }
+/*----------------- Max-Width 768px -------------------*/
 @media only screen and (max-width: 768px) {
-    /*------------------------Nav Bar---------------------*/
-/*    #main-nav ul {
-        margin: 0 auto;
-        padding: 0;
-        background: #000099;
-    }*/
-    #ggb-pic {
-        height: 450px;
-    }
-    p#title1 {
-        font-size: 50px;
-    }
-    p#title2 {
-        font-size: 22px;
-    }
-    p#title3 {
-        font-size: 15px;
-    }
-    #main-nav ul li {
-        display: block;
-        padding: 2% 0;
-    }
-    #about-img {
-        width: 250px;
-        height: 250px;
-    }
-    #about-blurb {
-        font-size: 0.95em;
-    }
-}
-/*--------------------------------------------------------Window size less than 480px*/
-@media only screen and (max-width: 500px) {
-/*    header,
-    section,
-    footer {
-        width: 100%;
-        position: relative;
-    }*/
-/*    #ggb-pic {
-        height: 450px;
-    }*/
-    p#title1 {
-        font-size: 40px;
-    }
-    p#title2 {
-        font-size: 20px;
-    }
-    p#title3 {
-        font-size: 15px;
-    }
-    section#about {
-        font-size: 15px;
-    }
-    /*------------------------Nav Bar---------------------*/
-    #main-nav ul {
-        margin: 0 auto;
-        padding: 0;
-        background: #000099;
-    }
-    #main-nav ul li {
-        display: block;
-        padding: 4% 0;
-    }
-    /*------------------------About----------------------*/
-/*    #about {
-        margin: 0 3%;
-        height: 550px;
-    }*/
-    #about-img {
-        width: 200px;
-        height: 200px;
-        float: none;
-        margin: 0 auto;
-    }
-    #about-blurb {
-        font-size: 0.8em;
-        margin: 0 auto;
-    }
-    /*------------------------Contact--------------------*/
-    #contact a img {
-        width: 30px;
-        height: 25px;
-    }
-    #contact a {
-        margin: 3% 3% 0;
-    }
-}
+  #ggb-pic {
+    height: 500px; }
+
+  div#title {
+    font-size: 13px; }
+
+  #about-blurb p {
+    margin: 20px 5px; }
+
+  #main-nav ul li {
+    display: block;
+    padding: 2% 0; } }
+/*----------------- Max-Width 572px -------------------*/
+@media only screen and (max-width: 572px) {
+  div#title {
+    font-size: 10px; }
+
+  #about {
+    height: 500px;
+    font-size: 13px; }
+
+  #about-img {
+    width: 200px;
+    height: 200px;
+    float: none;
+    margin: 0 auto; }
+
+  #about-blurb {
+    font-size: 1.5em; } }
+/*----------------- Max-Width 480px -------------------*/
+@media only screen and (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+  #ggb-pic {
+    height: 375px;
+    background-size: cover; }
+
+  div#title {
+    font-size: 9px; }
+
+  #about {
+    font-size: 11px; }
+
+  #contact-info a img {
+    width: 30px;
+    height: 25px; }
+
+  #contact-info a {
+    margin: 3% 3% 0; } }

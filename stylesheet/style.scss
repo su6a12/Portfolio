@@ -1,14 +1,19 @@
 $dark_blue: #000099;
 $light_blue: #4C89FF;
+$light_gray: #F5F8FA;
 $full_width: 100%;
 
 html,
 body {
   position: relative;
-  height: 100%;
-  font-size: 12px;
-  margin: 0 auto;
   font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+header,
+section,
+footer {
+  margin: 0;
+  padding: 0;
 }
 
 .clearfix:before,
@@ -25,13 +30,9 @@ body {
   zoom: 1;    /*For < IE 8*/
 }
 
-#main-wrapper {
-  position: relative;
-}
-
 #container {
+  width: $full_width;
   position: relative;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -43,7 +44,6 @@ body {
   height: 650px;
   background: url("../images/ggb1.jpg") no-repeat top center fixed;
   background-size: cover;
-  overflow: hidden;
 }
 
 div#title {
@@ -52,118 +52,61 @@ div#title {
   color: $dark_blue;
   position: absolute;
   text-align: center;
-  top: 30%;
+  top: 20%;
   opacity: 0.8;
-}
-
-p#title1 {
-  display: block;
-  font-size: 100px;
-  margin: 0;
-}
-
-p#title2 {
-  display: block;
-  font-size: 50px;
-  margin-top: -10px;
-  letter-spacing: 0.20em;
-}
-
-p#title3 {
-  display: block;
   font-size: 18px;
-  margin-top: 50px;
+
+  p#title1 {
+    display: block;
+    font-size: 5.5em;
+    margin: 0;
+  }
+
+  p#title2 {
+    display: block;
+    font-size: 2.7em;
+    margin-top: -10px;
+    letter-spacing: 0.2em;
+  }
+
+  p#title3 {
+    display: block;
+    font-size: 1.4em;
+    margin-top: 50px;
+  }
 }
+
 /*-----------------------------About-------------------------------*/
 #about {
-  height: 350px;
-  margin: 0 auto;
+  height: 330px;
+  position: relative;
+  font-size: 25px;
 }
 
 #about-img {
-  display: block;
+  margin: 15px 25px 0 10px;
   position: relative;
   width: 300px;
-  border-radius: 50%;
-  margin: -10px 40px 0 40px;
   height: 300px;
   float: left;
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
 }
 
 #about-blurb {
-  position: relative;
-  font-size: 2.3rem;
-  margin-top: 5%;
-  margin-right: 2%;
-  z-index: 100;
-}
-
-#about-blurb p {
-  text-indent: 50px;
-  span {
-  	display: none; /* This gets faded in as user scrolls */
+  font-size: 1em;
+  margin: 0 5%;
+  p {
+    margin: 50px 10px;
+    text-indent: 50px;
+    span {
+      display: none; /* This gets faded in as user scrolls */
+    }
   }
 }
-/*-------------------------LOL pic(REMOVED)------------------------------*/
-// #lol {
-//   width: 500px;
-//   margin: 0 auto;
-//   text-align: center;
-// }
 
-// #lol-window:before {
-//   margin-top: -50px;
-//   content: "";
-//   left: 0;
-//   width: $full_width;
-//   height: 100px;
-//   position: absolute;
-//   background-color: white;
-//   -webkit-transform:  skewY(4deg);
-//   -moz-transform:     skewY(4deg);
-//   transform:          skewY(4deg);
-// }
-
-// #lol-window:after {
-//   margin-bottom: -60px;
-//   content: "";
-//   bottom: 0;
-//   left: 0;
-//   width: $full_width;
-//   height: 100px;
-//   position: absolute;
-//   background-color: white;
-//   -webkit-transform:  skewY(4deg);
-//   -moz-transform:     skewY(4deg);
-//   transform:          skewY(4deg);
-// }
-
-// #lol-window {
-//   width: $full_width;
-//   position: relative;
-//   height: 333px;
-//   background-image: url("../images/lol.jpg");
-//   background-position: center 0;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-//   z-index: -100;
-// }
-
-// #window-transition {
-//   background-color: rgba(255, 255, 255, 0.7);
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-// }
-
-// #lol-text {
-//   text-align: left;
-//   padding-top: 50px;
-//   font-size: 25px;
-//   color: white;
-// }
 /*-------------------------Nav Bar-----------------------------*/
 #main-nav {
   width: $full_width;
@@ -202,30 +145,17 @@ p#title3 {
   -moz-transition:    background-color 0.4s ease;
   transition:         background-color 0.4s ease;
 }
+
 .navbar-collapse {
   border: 0;
   padding: 0;
 }
-/*-------------------------Projects List-----------------------*/
-#projects:after {
-  content: "";
-  width: $full_width;
-  z-index: 200;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -10;
-  background-image: url("../images/skyline.jpg");
-  background-attachment: fixed;
-  background-size: contain;
-}
 
+/*-------------------------Projects List-----------------------*/
 #projects {
+  background-color: $light_gray;
   position: relative;
   width: $full_width;
-  // height: 100%;
 	ul {
     position: relative;
     margin: 0;
@@ -239,6 +169,7 @@ p#title3 {
     	}
 		}
   }
+
   .showImg {
     opacity: 1;
     transform: translateY(0px);
@@ -285,8 +216,9 @@ figure {
   -moz-transition:    letter-spacing 0.4s ease;
   transition:         letter-spacing 0.4s ease;
 }
+
 /*---------------------------Contact-----------------------------*/
-#contact {
+#contact-info {
   text-align: center;
   position: relative;
   a {
@@ -294,13 +226,12 @@ figure {
     text-decoration: none;
     margin: 5% 5% 0;
     color: black;
-
   }
 }
+
 /*---------------------------Footer-----------------------------*/
 footer {
   max-width: $full_width;
-  // position: relative;
 }
 
 #main-footer {
