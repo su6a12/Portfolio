@@ -49,6 +49,7 @@ $(window).scroll(function() {
 	// }
 });		// end of window.scroll
 
+
 // Go to position on page where desired section is
 $("a[href^='#']").on("click", function(event) {
 	event.preventDefault();
