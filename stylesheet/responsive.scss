@@ -2,7 +2,7 @@
 @media only screen and (max-width: 1000px) {
 	#about {
 		height: 475px;
-		font-size: 20px;
+		font-size: 21px;
 	}
 
 	#about-img {
@@ -11,10 +11,18 @@
 		float: none;
 		margin: 0 auto;
 	}
+
+	#about-blurb {
+		padding: 5% 10%;
+	}
 }
 
 /*----------------- Max-Width 768px -------------------*/
 @media only screen and (max-width: 768px) {
+	#about {
+		font-size: 20px;
+	}
+
 	#ggb-pic {
 		height: 500px;
 	}
@@ -40,8 +48,8 @@
 	}
 
 	#about {
-		height: 500px;
-		font-size: 13px;
+		height: 550px;
+		font-size: 12px;
 	}
 
 	#about-img {

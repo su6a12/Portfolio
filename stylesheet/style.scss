@@ -1,6 +1,7 @@
 $dark_blue: #000099;
 $light_blue: #4C89FF;
 $light_gray: #F5F8FA;
+$dark_gray: #4c4c4c;
 $full_width: 100%;
 
 html,
@@ -85,7 +86,7 @@ div#title {
 
 #about-img {
   margin: 10px 25px 0 10px;
-  position: relative;
+  // position: relative;
   width: 300px;
   height: 300px;
   float: left;
@@ -96,11 +97,11 @@ div#title {
 }
 
 #about-blurb {
-  font-size: 1em;
-  margin: 0 5%;
+  font-size: 0.9em;
+  padding: 4% 10% 0 35%;
   p {
-    margin: 50px 10px;
     text-indent: 50px;
+    color: $dark_gray;
     span {
       display: none; /* This gets faded in as user scrolls */
     }
@@ -221,17 +222,21 @@ figure {
 #contact-info {
   text-align: center;
   position: relative;
+  #email {
+    font-size: 50px;
+  }
   a {
     display: inline-block;
     text-decoration: none;
     margin: 5% 5% 0;
-    color: black;
+    color: $dark_gray;
   }
 }
 
 /*---------------------------Footer-----------------------------*/
 footer {
   max-width: $full_width;
+  color: $dark_gray;
 }
 
 #main-footer {
