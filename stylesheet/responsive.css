@@ -28,7 +28,10 @@
 
   #main-nav ul li {
     display: block;
-    padding: 2% 0; } }
+    padding: 2% 0; }
+
+  #contact-info #email {
+    font-size: 40px; } }
 /*----------------- Max-Width 572px -------------------*/
 @media only screen and (max-width: 572px) {
   div#title {
@@ -64,5 +67,7 @@
   #about {
     font-size: 11px; }
 
+  #contact-info #email {
+    font-size: 25px; }
   #contact-info a {
     margin: 3% 4% 0; } }
