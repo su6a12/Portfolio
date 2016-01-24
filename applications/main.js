@@ -1,6 +1,7 @@
 $(window).scroll(function() {
 	var scrollHeight = $(this).scrollTop();
 	var headerHeight = $("#header").height();
+	console.log(scrollHeight, headerHeight);
 
 	if (scrollHeight < headerHeight) {
 	// Fades title in and out depending on page position
@@ -13,7 +14,7 @@ $(window).scroll(function() {
 
 	// Fades nav bar in and out depending on page position
 	// Want to fade in nav bar before about me section, so starting 
-	if (scrollHeight >= (headerHeight - 75)) {
+	if (scrollHeight >= (headerHeight - 200)) {
 		$("#main-nav").css({
 											"position": "fixed",
 											"top": 0
@@ -23,7 +24,7 @@ $(window).scroll(function() {
 	        		$(this).delay(index * 1000).fadeIn(1000);
 	      			});
 	}
-	if (scrollHeight < (headerHeight - 75)) {
+	if (scrollHeight < (headerHeight - 200)) {
 		$("#main-nav").fadeOut("fast");
 	}
 
