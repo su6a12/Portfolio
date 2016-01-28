@@ -59,7 +59,7 @@
 
   #ggb-pic {
     height: 375px;
-    background-size: cover; }
+    background: initial; }
 
   div#title {
     font-size: 9px; }
