@@ -163,7 +163,7 @@ figure {
     padding: 2px 8px; }
 
 #projects li:hover > figure figcaption {
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   -webkit-transition: letter-spacing 0.4s ease;
   -moz-transition: letter-spacing 0.4s ease;
   transition: letter-spacing 0.4s ease; }
