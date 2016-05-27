@@ -3,213 +3,161 @@
   <head>
     <meta charset="utf-8"/><!-- HTML5 -->
     <meta name="keywords" content="HTML, CSS, Javascript, jQuery"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
     <title>Melissa Yip | Web Developer</title>
-    <link rel="stylesheet" href="stylesheet/normalize.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="stylesheet/style.css"/>
-    <link rel="stylesheet" href="stylesheet/responsive.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheet/normalize.css"/>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type="text/css" href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
+    <link type="text/css" rel="stylesheet" href="stylesheet/style.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheet/responsive.css"/>
     <link rel="icon" href="favicon.ico"/>
   </head>
 
   <body>
-    <div id="container">
-      <header class="navbar-default">
-        <div id="main-nav" class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div><!-- navbar-header -->
+    <header class="navbar-default">
+      <div id="main-nav" class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div><!-- navbar-header -->
 
-          <div class="collapse navbar-collapse">
-            <ul>
-              <li><a href="#about" id="about-link">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="Melissa_Yip_CV.pdf" target="_blank">Resume</a></li>
-              <!-- <li><a href="http://lifeofmel.com/blog">Blog</a></li> -->
-              <li><a href="#contact-info">Contact</a></li>
-            </ul>
-          </div><!-- navbar-collapse -->
-        </div><!-- container -->
-      </header>
-
-
-      <section id="header">
-        <div id="ggb-pic">
-          <div id="title">
-            <p id="title1">Hi, I&#8217;m Melissa</p>
-            <p id="title2">Welcome To My Site</p>
-            <p id="title3">(Please Scroll Down)</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div id="about">
-
-          <div id="about-img">
-            <img src="images/headshot.jpg">
-          </div>
-
-          <div id="about-blurb">
-            <p><span>I'm a self-taught web developer who loves to code and make pretty things on screen.</span><span>  A product manager by day, a coding ninja by night.</span><span>  My joy comes from adding new skills to my ever expanding technology toolkit.</span><span>  That toolkit currently includes <b>HTML, CSS, Javascript, jQuery, Bootstrap, Git, Sass, SQL</b>.</span><span>  I love to learn so my list of projects is constantly growing.</span><span>  Please check out my work and let me know what you think!</span></p>
-          </div><!-- end of about-blurb -->
-
-        </div><!-- end of about -->
-      </section>
-
-      <section>
-        <div id="projects">
+        <div class="collapse navbar-collapse">
           <ul>
-            <div class="project">
-              <a href="my_projects/simon.html">
-                <li>
-                  <figure>
-                    <img src="images/simon.png" alt="simon game thumbnail">
-                    <figcaption class="project_name">Simon Game</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/wiki.html">
-                <li>
-                  <figure>
-                    <img src="images/wiki.png" alt="wiki search thumbnail">
-                    <figcaption class="project_name">Search Wiki</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/caffeine.html">
-                <li>
-                  <figure>
-                    <img src="images/caffeine_slots.png" alt="caffeine slots thumbnail">
-                    <figcaption class="project_name">Win Some Caffeine</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/d3_bar_chart.html">
-                <li>
-                  <figure>
-                    <img src="images/bar_chart.png" alt="gdp bar chart thumbnail">
-                    <figcaption class="project_name">GDP Bar Chart</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/d3_scatter_plot.html">
-                <li>
-                  <figure>
-                    <img src="images/scatter_plot.png" alt="scatter plot thumbnail">
-                    <figcaption class="project_name">Cycling Scatter Plot</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/memory.html">
-                <li>
-                  <figure>
-                    <img src="images/memory.png" alt="memory game thumbnail">
-                    <figcaption class="project_name">Test Your Memory</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/hangman.html">
-                <li>
-                  <figure>
-                    <img src="images/hangman.png" alt="hangman thumbnail">
-                    <figcaption class="project_name">Hangman</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/pomodoro.html">
-                <li>
-                  <figure>
-                    <img src="images/pomodoro.png" alt="pomodoro clock thumbnail">
-                    <figcaption class="project_name">Ready, Set, Work!</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/calculator.html">
-                <li>
-                  <figure>
-                    <img src="images/calculator.png" alt="calculator thumbnail">
-                    <figcaption class="project_name">Calculator</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/tic-tac-toe.html">
-                <li>
-                  <figure>
-                    <img src="images/tic_tac_toe.png" alt="tic tac toe thumbnail">
-                    <figcaption class="project_name">Play Tic-Tac-Toe</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/weather.php">
-                <li>
-                  <figure>
-                    <img src="images/weather_php.png" alt="weather report thumbnail">
-                    <figcaption class="project_name">Weather Report</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
-            <div class="project">
-              <a href="my_projects/ball-click.html">
-                <li>
-                  <figure>
-                    <img src="images/ball-click.png" alt="reaction time thumbnail">
-                    <figcaption class="project_name">Test Your Reaction</figcaption>
-                  </figure>
-                </li>
-              </a>
-            </div>
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="Melissa_Yip_Resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="http://lifeofmel.com/blog">Blog</a></li>
+            <li><a href="#contact-info">Contact</a></li>
           </ul>
-        </div><!-- projects -->
-      </section>
+        </div><!-- navbar-collapse -->
+      </div><!-- container -->
+    </header>
 
-      <section>
-        <div id="contact-info">
-          <div id="email">
-            <a href="mailto:melissasyip@gmail.com">melissasyip@gmail.com</a>
+
+    <section id="header">
+      <div id="ggb-pic">
+        <div id="title">
+          <p id="title1">Hi, I&#8217;m Melissa</p>
+          <p id="title2">Welcome To My Site</p>
+          <p id="title3">(Please Scroll Down)</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="about">
+
+        <div id="about-img">
+          <img src="images/headshot.jpg">
+        </div>
+
+        <div id="about-blurb">
+          <p><span>I'm a self-taught web developer who loves to code and make pretty things on screen.</span><span>  A product manager by day, a coding ninja by night.</span><span>  My joy comes from adding new skills to my ever expanding technology toolkit.</span><span>  That toolkit currently includes <b>HTML, CSS, Javascript, jQuery, Bootstrap, Git, Sass, SQL</b>.</span><span>  I love to learn so my list of projects is constantly growing.</span><span>  Please check out my work and let me know what you think!</span></p>
+        </div><!-- end of about-blurb -->
+
+      </div><!-- end of about -->
+    </section>
+
+    <section>
+      <div id="projects">
+        <ul>
+          <div class="project">
+            <a href="my_projects/pomodoro.html">
+              <li>
+                <figure>
+                  <img src="images/pomodoro.png" alt="pomodoro clock thumbnail">
+                  <figcaption class="project_name">Ready, Set, Work!</figcaption>
+                </figure>
+              </li>
+            </a>
           </div>
-          <a href="https://github.com/su6a12" title="Github" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/melissayip1" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-          <a href="http://codepen.io/su6a12/" title="CodePen" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>
-          <a href="https://twitter.com/su6a12" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-        </div>
+          <div class="project">
+            <a href="my_projects/simon.html">
+              <li>
+                <figure>
+                  <img src="images/simon.png" alt="simon game thumbnail">
+                  <figcaption class="project_name">Simon Game</figcaption>
+                </figure>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/wiki.html">
+              <li>
+                <figure>
+                  <img src="images/wiki.png" alt="wiki search thumbnail">
+                  <figcaption class="project_name">Search Wiki</figcaption>
+                </figure>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/caffeine.html">
+              <li>
+                <figure>
+                  <img src="images/caffeine_slots.png" alt="caffeine slots thumbnail">
+                  <figcaption class="project_name">Win Some Caffeine</figcaption>
+                </figure>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/d3_bar_chart.html">
+              <li>
+                <figure>
+                  <img src="images/bar_chart.png" alt="gdp bar chart thumbnail">
+                  <figcaption class="project_name">GDP Bar Chart</figcaption>
+                </figure>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/d3_scatter_plot.html">
+              <li>
+                <figure>
+                  <img src="images/scatter_plot.png" alt="scatter plot thumbnail">
+                  <figcaption class="project_name">Cycling Scatter Plot</figcaption>
+                </figure>
+              </li>
+            </a>
+          </div>
+          <div class="project">
+            <a href="my_projects/weather.php">
+              <li>
+                <figure>
+                  <img src="images/weather_php.png" alt="weather report thumbnail">
+                  <figcaption class="project_name">Weather Report</figcaption>
+                </figure>
+              </li>
+            </a>
+          </div>
+        </ul>
+      </div><!-- projects -->
+    </section>
 
-      </section>
-
-      <footer>
-        <div id="main-footer">
-          <p>&copy; Melissa Yip 2016</p>
+    <section>
+      <div id="contact-info">
+        <div id="email">
+          <a href="mailto:melissasyip@gmail.com">melissasyip@gmail.com</a>
         </div>
-      </footer>
-    </div><!-- container -->
+        <a href="https://github.com/su6a12" title="Github" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/melissayip1" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        <a href="http://codepen.io/su6a12/" title="CodePen" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>
+        <a href="https://twitter.com/su6a12" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+      </div>
+
+    </section>
+
+    <footer>
+      <div id="main-footer">
+        <p>&copy; Melissa Yip 2016</p>
+      </div>
+    </footer>
     
     <!-- Beginning of scripts -->
     <!--[if lt IE 9]>

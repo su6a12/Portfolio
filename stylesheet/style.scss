@@ -1,13 +1,9 @@
-$dark_blue: #000099;
-$light_blue: #4C89FF;
-$light_gray: #F5F8FA;
-$dark_gray: #4c4c4c;
-$full_width: 100%;
+@import '_variables';
 
 html,
 body {
   position: relative;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: $Raleway;
 }
 
 header,
@@ -33,7 +29,7 @@ footer {
 
 #container {
   width: $full_width;
-  position: relative;
+/*  position: relative;*/
   margin: 0;
   padding: 0;
 }
@@ -127,8 +123,8 @@ div#title {
 	    position: relative;
 	    display: inline-block;
 	    text-transform: uppercase;
-	    font-family: 'Raleway', Helvetica, sans-serif;
-	    padding: 1% 5%;
+	    font-family: $Raleway;
+	    padding: 1% 4%;
 	    border-radius: 5px;
 	    a {
 		    font-weight: bold;

@@ -23,7 +23,7 @@
   div#title {
     font-size: 13px; }
 
-  #about-blurb p {
+  #about-blurb {
     margin: 20px 5px; }
 
   #main-nav ul li {
@@ -57,17 +57,31 @@
   div {
     width: 100%;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    overflow-x: hidden; }
 
   #ggb-pic {
     height: 375px;
-    background: initial; }
+    background-size: cover;
+    /*background: initial;*/ }
 
   div#title {
     font-size: 9px; }
+    div#title p#title1 {
+      line-height: 0.9; }
+    div#title p#title2 {
+      margin-top: 10px;
+      line-height: 1; }
 
   #about {
     font-size: 11px; }
+    #about #about-blurb {
+      padding: 5% 3%;
+      margin: 2% 0; }
+
+  .project {
+    margin: 10px auto;
+    width: 250px; }
 
   #contact-info #email {
     font-size: 25px; }

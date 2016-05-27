@@ -1,7 +1,7 @@
 html,
 body {
   position: relative;
-  font-family: 'Raleway', Helvetica, sans-serif; }
+  font-family: "Raleway", Helvetica, sans-serif; }
 
 header,
 section,
@@ -23,7 +23,7 @@ footer {
 
 #container {
   width: 100%;
-  position: relative;
+  /*  position: relative;*/
   margin: 0;
   padding: 0; }
 
@@ -101,8 +101,8 @@ div#title {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    font-family: 'Raleway', Helvetica, sans-serif;
-    padding: 1% 5%;
+    font-family: "Raleway", Helvetica, sans-serif;
+    padding: 1% 4%;
     border-radius: 5px; }
     #main-nav ul li a {
       font-weight: bold;

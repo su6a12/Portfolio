@@ -1,7 +1,8 @@
 $(window).scroll(function() {
+
 	var scrollHeight = $(this).scrollTop();
 	var headerHeight = $("#header").height();
-	console.log(scrollHeight, headerHeight);
+	//console.log(scrollHeight, headerHeight);
 
 	if (scrollHeight < headerHeight) {
 	// Fades title in and out depending on page position
@@ -55,6 +56,7 @@ $(window).scroll(function() {
 $("a[href^='#']").on("click", function(event) {
 	event.preventDefault();
 	var $target = $(this.hash);
+	console.log($target);
 	$("html, body").animate({
 			scrollTop: $target.offset().top
 	}, 500);
