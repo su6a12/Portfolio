@@ -1,123 +1,115 @@
 /*----------------- Max-Width 1000px -------------------*/
+
 @media only screen and (max-width: 1000px) {
-	#about {
-		height: 475px;
-		font-size: 21px;
-	}
-
-	#about-img {
-		width: 200px;
-		height: 200px;
-		float: none;
-		margin: 0 auto;
-	}
-
-	#about-blurb {
-		padding: 5% 10%;
-	}
+    #about {
+        height: 475px;
+        font-size: 21px;
+    }
+    #about-img {
+        width: 200px;
+        height: 200px;
+        float: none;
+        margin: 0 auto;
+    }
+    #about-blurb {
+        padding: 5% 10%;
+    }
 }
+
 
 /*----------------- Max-Width 768px -------------------*/
+
 @media only screen and (max-width: 768px) {
-	#about {
-		font-size: 20px;
-	}
-
-	#ggb-pic {
-		height: 500px;
-	}
-
-	div#title {
-		font-size: 13px;
-	}
-
-	#about-blurb {
-		margin: 20px 5px;
-	}
-
-	#main-nav ul li {
-		display: block;
-		padding: 2% 0;
-	}
-
-	#contact-info {
-		#email {
-			font-size: 40px;
-		}
-	}
+    #about {
+        font-size: 20px;
+    }
+    #ggb-pic {
+        height: 500px;
+    }
+    div#title {
+        font-size: 13px;
+    }
+    #about-blurb {
+        margin: 20px 5px;
+    }
+    #main-nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+    #contact-info {
+        #email {
+            font-size: 40px;
+        }
+    }
 }
+
 
 /*----------------- Max-Width 572px -------------------*/
+
 @media only screen and (max-width: 572px) {
-	div#title {
-		font-size: 10px;
-	}
-
-	#about {
-		height: 550px;
-		font-size: 12px;
-	}
-
-	#about-img {
-		width: 200px;
-		height: 200px;
-		float: none;
-		margin: 0 auto;
-	}
-
-	#about-blurb {
-		font-size: 1.5em;
-	}
+    div#title {
+        font-size: 10px;
+    }
+    #about {
+        height: 550px;
+        font-size: 12px;
+    }
+    #about-img {
+        width: 200px;
+        height: 200px;
+        float: none;
+        margin: 0 auto;
+    }
+    #about-blurb {
+        font-size: 1.5em;
+    }
 }
 
+
 /*----------------- Max-Width 480px -------------------*/
+
 @media only screen and (max-width: 480px) {
-	html,
-	body,
-	section,
-	div {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		overflow-x: hidden;
-	}
-
-	#ggb-pic {
-		height: 375px;
-		background-size: cover;
-		/*background: initial;*/
-	}
-
-	div#title {
-		font-size: 9px;
-		p#title1 {
-			line-height: 0.9;
-		}
-		p#title2 {
-			margin-top: 10px;
-			line-height: 1;
-		}
-	}
-
-	#about {
-		font-size: 11px;
-		#about-blurb {
-			padding: 5% 3%;
-			margin: 2% 0;
-		}
-	}
-
-	.project {
-		margin: 10px auto;
-		width: 250px;
-	}
-  
-  #contact-info {
-  	#email {
-  		font-size: 25px;
-  	}
-  	a {
-    	margin: 3% 4% 0;
-  	}
-  }
+    html,
+    body,
+    section,
+    div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    #ggb-pic {
+        height: 375px;
+        background-size: cover;
+        /*background: initial;*/
+    }
+    div#title {
+        font-size: 9px;
+        p#title1 {
+            line-height: 0.9;
+        }
+        p#title2 {
+            margin-top: 10px;
+            line-height: 1;
+        }
+    }
+    #about {
+        font-size: 11px;
+        #about-blurb {
+            padding: 5% 3%;
+            margin: 2% 0;
+        }
+    }
+    .project {
+        margin: 10px auto;
+        width: 250px;
+    }
+    #contact-info {
+        #email {
+            font-size: 25px;
+        }
+        a {
+            margin: 3% 4% 0;
+        }
+    }
 }

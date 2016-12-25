@@ -2,7 +2,7 @@
 //Lightbox
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
-var $caption =$("<p></p>")
+var $caption = $("<p></p>")
 
 //An image to overlay
 $overlay.append($image);
@@ -40,8 +40,3 @@ $overlay.click(function() {
 //                         js.src = p +'://platform.twitter.com/widgets.js';
 //                         fjs.parentNode.insertBefore(js,fjs); } 
 //                     }(document, 'script', 'twitter-wjs');
-
-
-
-
-

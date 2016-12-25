@@ -131,6 +131,7 @@ div#title {
     width: 100%;
     text-align: center; }
     #projects ul li {
+      position: relative;
       font-size: 1.5em;
       color: #000099; }
       #projects ul li figure img {
@@ -144,10 +145,10 @@ div#title {
   margin: 30px 40px;
   opacity: 0;
   width: 300px;
-  background: white;
   transform: translateY(-20px); }
   .project li {
     border: 1px solid black;
+    background: white;
     text-decoration: none;
     list-style-type: none; }
 
@@ -173,6 +174,16 @@ figure {
   -webkit-transition: letter-spacing 0.4s ease;
   -moz-transition: letter-spacing 0.4s ease;
   transition: letter-spacing 0.4s ease; }
+
+.skills-tags {
+  margin: 2% 0; }
+  .skills-tags p {
+    text-align: left;
+    padding: 1% 2%;
+    margin: 2% 2%;
+    color: #4c4c4c;
+    font-weight: bold;
+    font-size: 1.2em; }
 
 /*---------------------------Contact-----------------------------*/
 #contact-info {

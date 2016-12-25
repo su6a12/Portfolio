@@ -1,243 +1,265 @@
 @import '_variables';
-
 html,
 body {
-  position: relative;
-  font-family: $Raleway;
+    position: relative;
+    font-family: $Raleway;
 }
 
 header,
 section,
 footer {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .clearfix:before,
 .clearfix:after {
-  content: "";
-  display: table;
+    content: "";
+    display: table;
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
 .clearfix {
-  zoom: 1;    /*For < IE 8*/
+    zoom: 1;
+    /*For < IE 8*/
 }
 
 #container {
-  width: $full_width;
-/*  position: relative;*/
-  margin: 0;
-  padding: 0;
+    width: $full_width;
+    /*  position: relative;*/
+    margin: 0;
+    padding: 0;
 }
 
+
 /*--------------------------Title Header(new 10-3-15)------------------*/
+
 #ggb-pic {
-  width: $full_width;
-  position: relative;
-  height: 650px;
-  background: url("../images/ggb1.jpg") no-repeat top center fixed;
-  background-size: cover;
+    width: $full_width;
+    position: relative;
+    height: 650px;
+    background: url("../images/ggb1.jpg") no-repeat top center fixed;
+    background-size: cover;
 }
 
 div#title {
-  text-transform: uppercase;
-  width: $full_width;
-  color: $dark_blue;
-  position: absolute;
-  text-align: center;
-  top: 20%;
-  opacity: 0.8;
-  font-size: 18px;
-
-  p#title1 {
-    display: block;
-    font-size: 5.5em;
-    margin: 0;
-  }
-
-  p#title2 {
-    display: block;
-    font-size: 2.7em;
-    margin-top: -10px;
-    letter-spacing: 0.2em;
-  }
-
-  p#title3 {
-    display: block;
-    font-size: 1.4em;
-    margin-top: 50px;
-  }
+    text-transform: uppercase;
+    width: $full_width;
+    color: $dark_blue;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    opacity: 0.8;
+    font-size: 18px;
+    p#title1 {
+        display: block;
+        font-size: 5.5em;
+        margin: 0;
+    }
+    p#title2 {
+        display: block;
+        font-size: 2.7em;
+        margin-top: -10px;
+        letter-spacing: 0.2em;
+    }
+    p#title3 {
+        display: block;
+        font-size: 1.4em;
+        margin-top: 50px;
+    }
 }
 
+
 /*-----------------------------About-------------------------------*/
+
 #about {
-  height: 330px;
-  position: relative;
-  font-size: 25px;
+    height: 330px;
+    position: relative;
+    font-size: 25px;
 }
 
 #about-img {
-  margin: 10px 25px 0 10px;
-  // position: relative;
-  width: 300px;
-  height: 300px;
-  float: left;
-  img {
-    width: 100%;
-    border-radius: 50%;
-  }
+    margin: 10px 25px 0 10px;
+    // position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
 }
 
 #about-blurb {
-  font-size: 0.9em;
-  padding: 4% 10% 0 35%;
-  p {
-    text-indent: 50px;
-    color: $dark_gray;
-    span {
-      display: none; /* This gets faded in as user scrolls */
+    font-size: 0.9em;
+    padding: 4% 10% 0 35%;
+    p {
+        text-indent: 50px;
+        color: $dark_gray;
+        span {
+            display: none;
+            /* This gets faded in as user scrolls */
+        }
     }
-  }
 }
+
 
 /*-------------------------Nav Bar-----------------------------*/
+
 #main-nav {
-  width: $full_width;
-  background: $dark_blue;
-  text-align: center;
-  opacity: 0.9;
-  display: none; /* Scrolling to a certain point on page reveals nav bar */
-  z-index: 999;
+    width: $full_width;
+    background: $dark_blue;
+    text-align: center;
+    opacity: 0.9;
+    display: none;
+    /* Scrolling to a certain point on page reveals nav bar */
+    z-index: 999;
 }
 
 #main-nav {
-	ul {
-    list-style: none;
-    display: block;
-    margin: 0;
-    li {
-	    position: relative;
-	    display: inline-block;
-	    text-transform: uppercase;
-	    font-family: $Raleway;
-	    padding: 1% 4%;
-	    border-radius: 5px;
-	    a {
-		    font-weight: bold;
-		    text-decoration: none;
-		    letter-spacing: .2em;
-		    color: white;
-		  }
-	  }
-  }
+    ul {
+        list-style: none;
+        display: block;
+        margin: 0;
+        li {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            font-family: $Raleway;
+            padding: 1% 4%;
+            border-radius: 5px;
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                letter-spacing: .2em;
+                color: white;
+            }
+        }
+    }
 }
 
 #main-nav li:hover {
-  background-color: $light_blue;
-  -webkit-transition: background-color 0.4s ease;
-  -moz-transition:    background-color 0.4s ease;
-  transition:         background-color 0.4s ease;
+    background-color: $light_blue;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
 }
 
 .navbar-collapse {
-  border: 0;
-  padding: 0;
+    border: 0;
+    padding: 0;
 }
 
-/*-------------------------Projects List-----------------------*/
-#projects {
-  background-color: $light_gray;
-  position: relative;
-  width: $full_width;
-	ul {
-    position: relative;
-    margin: 0;
-    width: $full_width;
-    text-align: center;
-    li {
-    	font-size: 1.5em;
-    	color: $dark_blue;
-    	figure img {
-    		width: $full_width;
-    	}
-		}
-  }
 
-  .showImg {
-    opacity: 1;
-    transform: translateY(0px);
-	}
+/*-------------------------Projects List-----------------------*/
+
+#projects {
+    background-color: $light_gray;
+    position: relative;
+    width: $full_width;
+    ul {
+        position: relative;
+        margin: 0;
+        width: $full_width;
+        text-align: center;
+        li {
+            position: relative;
+            font-size: 1.5em;
+            color: $dark_blue;
+            figure img {
+                width: $full_width;
+            }
+        }
+    }
+    .showImg {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .project {
-  display: inline-block;
-  margin: 30px 40px;
-  opacity: 0;
-  width: 300px;
-  background: white;
-  transform: translateY(-20px);
-  li {
-		border: 1px solid black;
-    text-decoration: none;
-    list-style-type: none;
-  }
+    display: inline-block;
+    margin: 30px 40px;
+    opacity: 0;
+    width: 300px;
+    transform: translateY(-20px);
+    li {
+        border: 1px solid black;
+        background: white;
+        text-decoration: none;
+        list-style-type: none;
+    }
 }
 
 figure {
-  overflow: hidden;
-  figcaption {
-	  position: absolute;
-	  bottom: 0;
-	  left: 0;
-	  background: $dark_blue;
-	  opacity: 0.9;
-	  color: white;
-	  padding: 2px 8px;
-	}
+    overflow: hidden;
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $dark_blue;
+        opacity: 0.9;
+        color: white;
+        padding: 2px 8px;
+    }
 }
 
 #projects li:hover > figure figcaption {
-  letter-spacing: 0.2em;
-  -webkit-transition: letter-spacing 0.4s ease;
-  -moz-transition:    letter-spacing 0.4s ease;
-  transition:         letter-spacing 0.4s ease;
+    letter-spacing: 0.2em;
+    -webkit-transition: letter-spacing 0.4s ease;
+    -moz-transition: letter-spacing 0.4s ease;
+    transition: letter-spacing 0.4s ease;
 }
 
 #projects li figure figcaption {
-  letter-spacing: 0;
-  -webkit-transition: letter-spacing 0.4s ease;
-  -moz-transition:    letter-spacing 0.4s ease;
-  transition:         letter-spacing 0.4s ease;
+    letter-spacing: 0;
+    -webkit-transition: letter-spacing 0.4s ease;
+    -moz-transition: letter-spacing 0.4s ease;
+    transition: letter-spacing 0.4s ease;
 }
+
+.skills-tags {
+    margin: 2% 0;
+    p {
+        text-align: left;
+        padding: 1% 2%;
+        margin: 2% 2%;
+        color: $dark_gray;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+}
+
 
 /*---------------------------Contact-----------------------------*/
+
 #contact-info {
-  text-align: center;
-  position: relative;
-  #email {
-    font-size: 50px;
-  }
-  a {
-    display: inline-block;
-    text-decoration: none;
-    margin: 5% 5% 0;
-    color: $dark_gray;
-  }
+    text-align: center;
+    position: relative;
+    #email {
+        font-size: 50px;
+    }
+    a {
+        display: inline-block;
+        text-decoration: none;
+        margin: 5% 5% 0;
+        color: $dark_gray;
+    }
 }
 
+
 /*---------------------------Footer-----------------------------*/
+
 footer {
-  max-width: $full_width;
-  color: $dark_gray;
+    max-width: $full_width;
+    color: $dark_gray;
 }
 
 #main-footer {
-	p {
-    padding: 3% 3%;
-  }
+    p {
+        padding: 3% 3%;
+    }
 }
-
